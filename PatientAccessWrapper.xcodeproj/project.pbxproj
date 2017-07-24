@@ -101,6 +101,7 @@
 				D310C18F1F26224D00DD3F05 /* Resources */,
 				1F401532841B5A2467CB809E /* [CP] Embed Pods Frameworks */,
 				916ED0A4D8C7C14396FF64AD /* [CP] Copy Pods Resources */,
+				D310C1A61F26405700DD3F05 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -204,6 +205,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PatientAccessWrapper/Pods-PatientAccessWrapper-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D310C1A61F26405700DD3F05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 27063c3a779a0710c1a9ab1de185f4729a2ff964 4d2a0ec3deda5c80137a92ad220ab5dfe5df6e9dea650d90ac76e19c91c53247";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -379,6 +393,7 @@
 				D310C1A51F26224D00DD3F05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
