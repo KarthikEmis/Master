@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import EventKit
 
 class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, URLSessionDelegate {
 
@@ -56,9 +57,43 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
         
         let webcal = NSURL(string: link)
         //UIApplication.shared.openURL(webcal! as URL)
-        UIApplication.shared.open(webcal! as URL, options: [:]) { (Bool) in}
+        //UIApplication.shared.open(webcal! as URL, options: [:]) { (Bool) in}
         
-        wkWebView.load(URLRequest(url: webcal! as URL))
+        //wkWebView.load(URLRequest(url: webcal! as URL))
+        let mxlManager = MXLCalendarManager()
+        mxlManager.scanICSFile(atRemoteURL: webcal as URL!) { (calendar : MXLCalendar!, error:Error!) in
+            
+            let eventsArray = calendar.events as! Array <MXLCalendarEvent>
+            EKEventStore.authorizationStatus(for: .event)
+            let eventStore = EKEventStore()
+            
+            for event : MXLCalendarEvent in eventsArray {
+                let calendarEvent = event.convertToEKEvent(on: Date(), store: eventStore)!
+                calendarEvent.calendar = eventStore.defaultCalendarForNewEvents
+                
+                eventStore.requestAccess(to: .event) { (granted, error) in
+                    
+                    if (granted) && (error == nil) {
+                        print("granted \(granted)")
+                        print("error \(String(describing: error))")
+                        
+                        do {
+                            try eventStore.save(calendarEvent, span: .thisEvent)
+                        } catch let error as NSError {
+                            print("failed to save event with error : \(error)")
+                        }
+                        print("Saved Event")
+                    }
+                    else{
+                        
+                        print("failed to save event with error : \(String(describing: error)) or access not granted")
+                    }
+                }   
+
+            }
+            
+        }
+    
     }
     
     func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {

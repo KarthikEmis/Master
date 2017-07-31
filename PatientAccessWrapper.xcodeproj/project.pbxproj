@@ -14,6 +14,11 @@
 		D310C19C1F26224D00DD3F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D310C19B1F26224D00DD3F05 /* Assets.xcassets */; };
 		D310C19F1F26224D00DD3F05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */; };
 		D310C1A91F28A47300DD3F05 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = D310C1A81F28A47300DD3F05 /* script.js */; };
+		D339547A1F2F5B0F00D11946 /* MXLCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954711F2F5B0F00D11946 /* MXLCalendar.m */; };
+		D339547B1F2F5B0F00D11946 /* MXLCalendarAttendee.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954731F2F5B0F00D11946 /* MXLCalendarAttendee.m */; };
+		D339547C1F2F5B0F00D11946 /* MXLCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954751F2F5B0F00D11946 /* MXLCalendarEvent.m */; };
+		D339547D1F2F5B0F00D11946 /* MXLCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954771F2F5B0F00D11946 /* MXLCalendarManager.m */; };
+		D339547E1F2F5B0F00D11946 /* NSTimeZone+ProperAbbreviation.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954791F2F5B0F00D11946 /* NSTimeZone+ProperAbbreviation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,17 @@
 		D310C19E1F26224D00DD3F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D310C1A01F26224D00DD3F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D310C1A81F28A47300DD3F05 /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		D339546E1F2F5A6800D11946 /* PatientAccessWrapper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PatientAccessWrapper-Bridging-Header.h"; sourceTree = "<group>"; };
+		D33954701F2F5B0F00D11946 /* MXLCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLCalendar.h; sourceTree = "<group>"; };
+		D33954711F2F5B0F00D11946 /* MXLCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLCalendar.m; sourceTree = "<group>"; };
+		D33954721F2F5B0F00D11946 /* MXLCalendarAttendee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLCalendarAttendee.h; sourceTree = "<group>"; };
+		D33954731F2F5B0F00D11946 /* MXLCalendarAttendee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLCalendarAttendee.m; sourceTree = "<group>"; };
+		D33954741F2F5B0F00D11946 /* MXLCalendarEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLCalendarEvent.h; sourceTree = "<group>"; };
+		D33954751F2F5B0F00D11946 /* MXLCalendarEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLCalendarEvent.m; sourceTree = "<group>"; };
+		D33954761F2F5B0F00D11946 /* MXLCalendarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXLCalendarManager.h; sourceTree = "<group>"; };
+		D33954771F2F5B0F00D11946 /* MXLCalendarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXLCalendarManager.m; sourceTree = "<group>"; };
+		D33954781F2F5B0F00D11946 /* NSTimeZone+ProperAbbreviation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimeZone+ProperAbbreviation.h"; sourceTree = "<group>"; };
+		D33954791F2F5B0F00D11946 /* NSTimeZone+ProperAbbreviation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimeZone+ProperAbbreviation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +61,7 @@
 		8A6F13601BBD12F0143179A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D339546F1F2F5AF900D11946 /* iCalParser */,
 				8E38D3DCC93BC67586BC604D /* Pods_PatientAccessWrapper.framework */,
 			);
 			name = Frameworks;
@@ -87,6 +104,7 @@
 				D310C19B1F26224D00DD3F05 /* Assets.xcassets */,
 				D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */,
 				D310C1A01F26224D00DD3F05 /* Info.plist */,
+				D339546E1F2F5A6800D11946 /* PatientAccessWrapper-Bridging-Header.h */,
 			);
 			path = PatientAccessWrapper;
 			sourceTree = "<group>";
@@ -97,6 +115,23 @@
 				D310C1A81F28A47300DD3F05 /* script.js */,
 			);
 			name = Scripts;
+			sourceTree = "<group>";
+		};
+		D339546F1F2F5AF900D11946 /* iCalParser */ = {
+			isa = PBXGroup;
+			children = (
+				D33954701F2F5B0F00D11946 /* MXLCalendar.h */,
+				D33954711F2F5B0F00D11946 /* MXLCalendar.m */,
+				D33954721F2F5B0F00D11946 /* MXLCalendarAttendee.h */,
+				D33954731F2F5B0F00D11946 /* MXLCalendarAttendee.m */,
+				D33954741F2F5B0F00D11946 /* MXLCalendarEvent.h */,
+				D33954751F2F5B0F00D11946 /* MXLCalendarEvent.m */,
+				D33954761F2F5B0F00D11946 /* MXLCalendarManager.h */,
+				D33954771F2F5B0F00D11946 /* MXLCalendarManager.m */,
+				D33954781F2F5B0F00D11946 /* NSTimeZone+ProperAbbreviation.h */,
+				D33954791F2F5B0F00D11946 /* NSTimeZone+ProperAbbreviation.m */,
+			);
+			name = iCalParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,8 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D339547E1F2F5B0F00D11946 /* NSTimeZone+ProperAbbreviation.m in Sources */,
 				D310C1971F26224D00DD3F05 /* ViewController.swift in Sources */,
+				D339547B1F2F5B0F00D11946 /* MXLCalendarAttendee.m in Sources */,
+				D339547A1F2F5B0F00D11946 /* MXLCalendar.m in Sources */,
 				D310C1951F26224D00DD3F05 /* AppDelegate.swift in Sources */,
+				D339547C1F2F5B0F00D11946 /* MXLCalendarEvent.m in Sources */,
+				D339547D1F2F5B0F00D11946 /* MXLCalendarManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +411,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -387,6 +428,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
