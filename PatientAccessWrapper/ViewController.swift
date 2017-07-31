@@ -51,6 +51,14 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
         if let url = URL(string: "https://pacweb.vrn.dataart.net/dev/") {
             wkWebView.load(URLRequest(url: url))
         }
+        
+        let link = "https://1fichier.com/?cx6r8k9uq7"
+        
+        let webcal = NSURL(string: link)
+        //UIApplication.shared.openURL(webcal! as URL)
+        UIApplication.shared.open(webcal! as URL, options: [:]) { (Bool) in}
+        
+        wkWebView.load(URLRequest(url: webcal! as URL))
     }
     
     func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
