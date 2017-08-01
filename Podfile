@@ -9,5 +9,6 @@ target 'PatientAccessWrapper' do
 
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'Flurry-iOS-SDK/FlurrySDK'
 
 end
