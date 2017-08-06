@@ -9,5 +9,11 @@ target 'PatientAccessWrapper' do
 
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'Flurry-iOS-SDK/FlurrySDK'
+  pod 'Alamofire', '~> 4.4'
+  pod 'KeychainAccess', '~>3.0.1'
+  pod 'Bolts-Swift', '~> 1.3.0'
+  pod 'ObjectMapper', '~> 2.2'
+  pod 'AlamofireObjectMapper', '~> 4.0'
 
 end

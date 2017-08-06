@@ -8,18 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		4FE8FF18CF602D060D490850 /* Pods_PatientAccessWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E38D3DCC93BC67586BC604D /* Pods_PatientAccessWrapper.framework */; };
+		D30C3E661F34B8FD00A7F4FD /* HealthKitNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E651F34B8FD00A7F4FD /* HealthKitNetworkService.swift */; };
 		D310C1951F26224D00DD3F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1941F26224D00DD3F05 /* AppDelegate.swift */; };
 		D310C1971F26224D00DD3F05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1961F26224D00DD3F05 /* ViewController.swift */; };
 		D310C19A1F26224D00DD3F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C1981F26224D00DD3F05 /* Main.storyboard */; };
 		D310C19C1F26224D00DD3F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D310C19B1F26224D00DD3F05 /* Assets.xcassets */; };
 		D310C19F1F26224D00DD3F05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */; };
-		D310C1A91F28A47300DD3F05 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = D310C1A81F28A47300DD3F05 /* script.js */; };
+		D33954811F31F45A00D11946 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954801F31F45A00D11946 /* Constants.swift */; };
+		D33954861F32078B00D11946 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954851F32078A00D11946 /* RequestType.swift */; };
+		D33954881F32079A00D11946 /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954871F32079A00D11946 /* RequestResult.swift */; };
+		D339548A1F3208F400D11946 /* GetAnchorsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954891F3208F400D11946 /* GetAnchorsRequest.swift */; };
+		D339548C1F3222BA00D11946 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339548B1F3222B900D11946 /* ApplicationAssembly.swift */; };
+		D339548E1F32248E00D11946 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339548D1F32248E00D11946 /* UserSession.swift */; };
+		D33954901F322C7800D11946 /* LoginNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339548F1F322C7800D11946 /* LoginNetworkService.swift */; };
+		D33954921F331B4E00D11946 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954911F331B4E00D11946 /* APIClient.swift */; };
+		D33954941F33218200D11946 /* CredentialsStorageServiceImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954931F33218200D11946 /* CredentialsStorageServiceImplementation.swift */; };
+		D339549A1F33426E00D11946 /* BearerCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954991F33426E00D11946 /* BearerCredentials.swift */; };
+		D339549C1F334E6900D11946 /* EntitySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D339549B1F334E6900D11946 /* EntitySerializer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18E828F0C5FA423713E73F4D /* Pods-PatientAccessWrapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientAccessWrapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PatientAccessWrapper/Pods-PatientAccessWrapper.debug.xcconfig"; sourceTree = "<group>"; };
 		5C5C736452E20B64223F1D24 /* Pods-PatientAccessWrapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientAccessWrapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PatientAccessWrapper/Pods-PatientAccessWrapper.release.xcconfig"; sourceTree = "<group>"; };
 		8E38D3DCC93BC67586BC604D /* Pods_PatientAccessWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientAccessWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30C3E651F34B8FD00A7F4FD /* HealthKitNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitNetworkService.swift; sourceTree = "<group>"; };
 		D310C1911F26224D00DD3F05 /* PatientAccessWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientAccessWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D310C1941F26224D00DD3F05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D310C1961F26224D00DD3F05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +39,17 @@
 		D310C19B1F26224D00DD3F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D310C19E1F26224D00DD3F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D310C1A01F26224D00DD3F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D310C1A81F28A47300DD3F05 /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		D33954801F31F45A00D11946 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D33954851F32078A00D11946 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		D33954871F32079A00D11946 /* RequestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestResult.swift; sourceTree = "<group>"; };
+		D33954891F3208F400D11946 /* GetAnchorsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAnchorsRequest.swift; sourceTree = "<group>"; };
+		D339548B1F3222B900D11946 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		D339548D1F32248E00D11946 /* UserSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
+		D339548F1F322C7800D11946 /* LoginNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNetworkService.swift; sourceTree = "<group>"; };
+		D33954911F331B4E00D11946 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		D33954931F33218200D11946 /* CredentialsStorageServiceImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsStorageServiceImplementation.swift; sourceTree = "<group>"; };
+		D33954991F33426E00D11946 /* BearerCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearerCredentials.swift; sourceTree = "<group>"; };
+		D339549B1F334E6900D11946 /* EntitySerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntitySerializer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,23 +102,58 @@
 		D310C1931F26224D00DD3F05 /* PatientAccessWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				D310C1A71F28A45B00DD3F05 /* Scripts */,
+				D33954961F33417C00D11946 /* Data Models */,
+				D33954821F32055200D11946 /* Services */,
 				D310C1941F26224D00DD3F05 /* AppDelegate.swift */,
 				D310C1961F26224D00DD3F05 /* ViewController.swift */,
 				D310C1981F26224D00DD3F05 /* Main.storyboard */,
 				D310C19B1F26224D00DD3F05 /* Assets.xcassets */,
 				D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */,
 				D310C1A01F26224D00DD3F05 /* Info.plist */,
+				D33954801F31F45A00D11946 /* Constants.swift */,
 			);
 			path = PatientAccessWrapper;
 			sourceTree = "<group>";
 		};
-		D310C1A71F28A45B00DD3F05 /* Scripts */ = {
+		D33954821F32055200D11946 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D310C1A81F28A47300DD3F05 /* script.js */,
+				D339548D1F32248E00D11946 /* UserSession.swift */,
+				D33954931F33218200D11946 /* CredentialsStorageServiceImplementation.swift */,
+				D33954831F32056300D11946 /* Networking */,
 			);
-			name = Scripts;
+			name = Services;
+			sourceTree = "<group>";
+		};
+		D33954831F32056300D11946 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D33954841F32075700D11946 /* Requests */,
+				D33954851F32078A00D11946 /* RequestType.swift */,
+				D33954871F32079A00D11946 /* RequestResult.swift */,
+				D339548B1F3222B900D11946 /* ApplicationAssembly.swift */,
+				D339548F1F322C7800D11946 /* LoginNetworkService.swift */,
+				D33954911F331B4E00D11946 /* APIClient.swift */,
+				D339549B1F334E6900D11946 /* EntitySerializer.swift */,
+				D30C3E651F34B8FD00A7F4FD /* HealthKitNetworkService.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		D33954841F32075700D11946 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				D33954891F3208F400D11946 /* GetAnchorsRequest.swift */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		D33954961F33417C00D11946 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				D33954991F33426E00D11946 /* BearerCredentials.swift */,
+			);
+			name = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +221,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D310C19F1F26224D00DD3F05 /* LaunchScreen.storyboard in Resources */,
-				D310C1A91F28A47300DD3F05 /* script.js in Resources */,
 				D310C19C1F26224D00DD3F05 /* Assets.xcassets in Resources */,
 				D310C19A1F26224D00DD3F05 /* Main.storyboard in Resources */,
 			);
@@ -238,8 +294,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D33954881F32079A00D11946 /* RequestResult.swift in Sources */,
 				D310C1971F26224D00DD3F05 /* ViewController.swift in Sources */,
 				D310C1951F26224D00DD3F05 /* AppDelegate.swift in Sources */,
+				D33954921F331B4E00D11946 /* APIClient.swift in Sources */,
+				D339548A1F3208F400D11946 /* GetAnchorsRequest.swift in Sources */,
+				D33954941F33218200D11946 /* CredentialsStorageServiceImplementation.swift in Sources */,
+				D339548C1F3222BA00D11946 /* ApplicationAssembly.swift in Sources */,
+				D30C3E661F34B8FD00A7F4FD /* HealthKitNetworkService.swift in Sources */,
+				D33954901F322C7800D11946 /* LoginNetworkService.swift in Sources */,
+				D33954811F31F45A00D11946 /* Constants.swift in Sources */,
+				D33954861F32078B00D11946 /* RequestType.swift in Sources */,
+				D339549A1F33426E00D11946 /* BearerCredentials.swift in Sources */,
+				D339549C1F334E6900D11946 /* EntitySerializer.swift in Sources */,
+				D339548E1F32248E00D11946 /* UserSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

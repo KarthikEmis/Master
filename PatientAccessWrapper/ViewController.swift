@@ -11,8 +11,10 @@ import WebKit
 
 class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, URLSessionDelegate {
 
+    private var networkService: HealthKitNetworkServiceInterface? = nil
+
     @IBOutlet weak var webContainerView: UIView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,7 +50,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
         wkWebView.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
         UserDefaults.standard.register(defaults: ["UserAgent": "iOS/WebWrapper"])
 
-        if let url = URL(string: "https://pacweb.vrn.dataart.net/dev/") {
+        if let url = URL(string: "https://" + APIEndpoints.baseURL) {
             wkWebView.load(URLRequest(url: url))
         }
     }
@@ -74,6 +76,36 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         print(message.body)
         
+        let uuid = UUID().uuidString
+        let userSession = ApplicationAssembly.shared.userSession
+
+        userSession?.receivedToken(tokenString: (message.body as! Dictionary)["body"]!)
+        networkService = HealthKitNetworkService()
+        networkService?.getAnchors(uuidString:uuid) { [weak self] result in
+            guard let strongSelf = self else { return }
+//            switch result {
+//            case .success(let response):
+//                strongSelf.baseModel = response
+//                if let appointments = response.appointments {
+//                    strongSelf.list = appointments
+//                }
+//                tableDataSourse.canCancelAppointments = response.canCancelAppointments
+//                tableDataSourse.canBookAppointments = response.canBookAppointments
+//                tableDataSourse.historyAvailable = response.historyAvailable
+//                strongSelf.filterList()
+//                tableDataSourse.dataArrUpcomingArray = strongSelf.incomingList
+//                tableDataSourse.dataArrPassedArray = strongSelf.passedList
+//                tableDataSourse.reloadTableView()
+//                strongSelf.endActivity()
+//                break
+//                
+//            case .failure(let error):
+//                strongSelf.endActivity(with: error)
+//                print(error)
+//                break
+//            }
+        }
+
     }
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
