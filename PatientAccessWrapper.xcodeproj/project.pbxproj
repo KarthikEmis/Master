@@ -13,6 +13,12 @@
 		D310C19A1F26224D00DD3F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C1981F26224D00DD3F05 /* Main.storyboard */; };
 		D310C19C1F26224D00DD3F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D310C19B1F26224D00DD3F05 /* Assets.xcassets */; };
 		D310C19F1F26224D00DD3F05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */; };
+		EA7FFF8C1F38503B006A23E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1961F26224D00DD3F05 /* ViewController.swift */; };
+		EA7FFF8D1F38503B006A23E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1941F26224D00DD3F05 /* AppDelegate.swift */; };
+		EA7FFF8F1F38503B006A23E9 /* Pods_PatientAccessWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E38D3DCC93BC67586BC604D /* Pods_PatientAccessWrapper.framework */; };
+		EA7FFF911F38503B006A23E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */; };
+		EA7FFF921F38503B006A23E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D310C19B1F26224D00DD3F05 /* Assets.xcassets */; };
+		EA7FFF931F38503B006A23E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C1981F26224D00DD3F05 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,7 @@
 		D310C19B1F26224D00DD3F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D310C19E1F26224D00DD3F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D310C1A01F26224D00DD3F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA7FFF9A1F38503B006A23E9 /* PatientAccessWrapperTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientAccessWrapperTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +41,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE8FF18CF602D060D490850 /* Pods_PatientAccessWrapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7FFF8E1F38503B006A23E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7FFF8F1F38503B006A23E9 /* Pods_PatientAccessWrapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				D310C1911F26224D00DD3F05 /* PatientAccessWrapper.app */,
+				EA7FFF9A1F38503B006A23E9 /* PatientAccessWrapperTC.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +128,27 @@
 			productReference = D310C1911F26224D00DD3F05 /* PatientAccessWrapper.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EA7FFF891F38503B006A23E9 /* PatientAccessWrapperTC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA7FFF971F38503B006A23E9 /* Build configuration list for PBXNativeTarget "PatientAccessWrapperTC" */;
+			buildPhases = (
+				EA7FFF8A1F38503B006A23E9 /* [CP] Check Pods Manifest.lock */,
+				EA7FFF8B1F38503B006A23E9 /* Sources */,
+				EA7FFF8E1F38503B006A23E9 /* Frameworks */,
+				EA7FFF901F38503B006A23E9 /* Resources */,
+				EA7FFF941F38503B006A23E9 /* [CP] Embed Pods Frameworks */,
+				EA7FFF951F38503B006A23E9 /* [CP] Copy Pods Resources */,
+				EA7FFF961F38503B006A23E9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PatientAccessWrapperTC;
+			productName = PatientAccessWrapper;
+			productReference = EA7FFF9A1F38503B006A23E9 /* PatientAccessWrapperTC.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +163,9 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = ATC3BMUNP9;
 						ProvisioningStyle = Automatic;
+					};
+					EA7FFF891F38503B006A23E9 = {
+						DevelopmentTeam = G5EG5T3U3L;
 					};
 				};
 			};
@@ -143,6 +183,7 @@
 			projectRoot = "";
 			targets = (
 				D310C1901F26224D00DD3F05 /* PatientAccessWrapper */,
+				EA7FFF891F38503B006A23E9 /* PatientAccessWrapperTC */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +196,16 @@
 				D310C19F1F26224D00DD3F05 /* LaunchScreen.storyboard in Resources */,
 				D310C19C1F26224D00DD3F05 /* Assets.xcassets in Resources */,
 				D310C19A1F26224D00DD3F05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7FFF901F38503B006A23E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7FFF911F38503B006A23E9 /* LaunchScreen.storyboard in Resources */,
+				EA7FFF921F38503B006A23E9 /* Assets.xcassets in Resources */,
+				EA7FFF931F38503B006A23E9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +270,64 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 27063c3a779a0710c1a9ab1de185f4729a2ff964 4d2a0ec3deda5c80137a92ad220ab5dfe5df6e9dea650d90ac76e19c91c53247";
 		};
+		EA7FFF8A1F38503B006A23E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7FFF941F38503B006A23E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PatientAccessWrapper/Pods-PatientAccessWrapper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7FFF951F38503B006A23E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PatientAccessWrapper/Pods-PatientAccessWrapper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7FFF961F38503B006A23E9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 27063c3a779a0710c1a9ab1de185f4729a2ff964 4d2a0ec3deda5c80137a92ad220ab5dfe5df6e9dea650d90ac76e19c91c53247";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -228,6 +337,15 @@
 			files = (
 				D310C1971F26224D00DD3F05 /* ViewController.swift in Sources */,
 				D310C1951F26224D00DD3F05 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7FFF8B1F38503B006A23E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7FFF8C1F38503B006A23E9 /* ViewController.swift in Sources */,
+				EA7FFF8D1F38503B006A23E9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +492,35 @@
 			};
 			name = Release;
 		};
+		EA7FFF981F38503B006A23E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18E828F0C5FA423713E73F4D /* Pods-PatientAccessWrapper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G5EG5T3U3L;
+				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.patient.PatientAccessWebWrapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EA7FFF991F38503B006A23E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C5C736452E20B64223F1D24 /* Pods-PatientAccessWrapper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G5EG5T3U3L;
+				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.patient.PatientAccessWebWrapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -391,6 +538,15 @@
 			buildConfigurations = (
 				D310C1A41F26224D00DD3F05 /* Debug */,
 				D310C1A51F26224D00DD3F05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA7FFF971F38503B006A23E9 /* Build configuration list for PBXNativeTarget "PatientAccessWrapperTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA7FFF981F38503B006A23E9 /* Debug */,
+				EA7FFF991F38503B006A23E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
