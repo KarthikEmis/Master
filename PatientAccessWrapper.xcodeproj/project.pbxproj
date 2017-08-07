@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4FE8FF18CF602D060D490850 /* Pods_PatientAccessWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E38D3DCC93BC67586BC604D /* Pods_PatientAccessWrapper.framework */; };
 		9EC9BAAF0F86DE329B0657CD /* Pods_PatientAccessWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E38D3DCC93BC67586BC604D /* Pods_PatientAccessWrapper.framework */; };
+		D30C3E6F1F385DE200A7F4FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E6E1F385DE200A7F4FD /* Constants.swift */; };
 		D310C1951F26224D00DD3F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1941F26224D00DD3F05 /* AppDelegate.swift */; };
 		D310C1971F26224D00DD3F05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1961F26224D00DD3F05 /* ViewController.swift */; };
 		D310C19A1F26224D00DD3F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C1981F26224D00DD3F05 /* Main.storyboard */; };
@@ -19,12 +20,14 @@
 		EA7FFF911F38503B006A23E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */; };
 		EA7FFF921F38503B006A23E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D310C19B1F26224D00DD3F05 /* Assets.xcassets */; };
 		EA7FFF931F38503B006A23E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C1981F26224D00DD3F05 /* Main.storyboard */; };
+		D310C1A91F28A47300DD3F05 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = D310C1A81F28A47300DD3F05 /* script.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CA55466057B7D21D0B30B3D /* Pods-PatientAccessWrapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientAccessWrapper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PatientAccessWrapper/Pods-PatientAccessWrapper.debug.xcconfig"; sourceTree = "<group>"; };
 		8E38D3DCC93BC67586BC604D /* Pods_PatientAccessWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientAccessWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57C5178231FAB3732CC0075 /* Pods-PatientAccessWrapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientAccessWrapper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PatientAccessWrapper/Pods-PatientAccessWrapper.release.xcconfig"; sourceTree = "<group>"; };
+		D30C3E6E1F385DE200A7F4FD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D310C1911F26224D00DD3F05 /* PatientAccessWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientAccessWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D310C1941F26224D00DD3F05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D310C1961F26224D00DD3F05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		D310C19E1F26224D00DD3F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D310C1A01F26224D00DD3F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA7FFF9A1F38503B006A23E9 /* PatientAccessWrapperTC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientAccessWrapperTC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D310C1A81F28A47300DD3F05 /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,14 +98,24 @@
 		D310C1931F26224D00DD3F05 /* PatientAccessWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				D310C1A71F28A45B00DD3F05 /* Scripts */,
 				D310C1941F26224D00DD3F05 /* AppDelegate.swift */,
 				D310C1961F26224D00DD3F05 /* ViewController.swift */,
 				D310C1981F26224D00DD3F05 /* Main.storyboard */,
 				D310C19B1F26224D00DD3F05 /* Assets.xcassets */,
 				D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */,
 				D310C1A01F26224D00DD3F05 /* Info.plist */,
+				D30C3E6E1F385DE200A7F4FD /* Constants.swift */,
 			);
 			path = PatientAccessWrapper;
+			sourceTree = "<group>";
+		};
+		D310C1A71F28A45B00DD3F05 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D310C1A81F28A47300DD3F05 /* script.js */,
+			);
+			name = Scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +172,7 @@
 				TargetAttributes = {
 					D310C1901F26224D00DD3F05 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = ATC3BMUNP9;
+						DevelopmentTeam = UCVJ9Z823D;
 						ProvisioningStyle = Automatic;
 					};
 					EA7FFF891F38503B006A23E9 = {
@@ -191,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D310C19F1F26224D00DD3F05 /* LaunchScreen.storyboard in Resources */,
+				D310C1A91F28A47300DD3F05 /* script.js in Resources */,
 				D310C19C1F26224D00DD3F05 /* Assets.xcassets in Resources */,
 				D310C19A1F26224D00DD3F05 /* Main.storyboard in Resources */,
 			);
@@ -289,6 +304,7 @@
 			files = (
 				D310C1971F26224D00DD3F05 /* ViewController.swift in Sources */,
 				D310C1951F26224D00DD3F05 /* AppDelegate.swift in Sources */,
+				D30C3E6F1F385DE200A7F4FD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,11 +437,14 @@
 			baseConfigurationReference = 3CA55466057B7D21D0B30B3D /* Pods-PatientAccessWrapper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ATC3BMUNP9;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccessWrapper;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -435,11 +454,13 @@
 			baseConfigurationReference = A57C5178231FAB3732CC0075 /* Pods-PatientAccessWrapper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ATC3BMUNP9;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccessWrapper;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
