@@ -48,7 +48,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
         wkWebView.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
         UserDefaults.standard.register(defaults: ["UserAgent": "iOS/WebWrapper"])
 
-        if let url = URL(string: "https://pacweb.vrn.dataart.net/dev/") {
+        if let url = URL(string: "https://" + APIEndpoints.baseURL) {
             wkWebView.load(URLRequest(url: url))
         }
     }
