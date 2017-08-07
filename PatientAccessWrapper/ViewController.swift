@@ -8,10 +8,12 @@
 
 import UIKit
 import WebKit
+import HealthKit
 
 class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, URLSessionDelegate {
 
     private var networkService: HealthKitNetworkServiceInterface? = nil
+    let healthManager = HealthManager()
 
     @IBOutlet weak var webContainerView: UIView!
 
@@ -104,6 +106,19 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
 //                print(error)
 //                break
 //            }
+            
+            strongSelf.healthManager.authorizeHealthKit { (authorized,  error) -> Void in
+                if authorized {
+                    print("HealthKit authorization received.")
+                }
+                else
+                {
+                    print("HealthKit authorization denied!")
+                    if error != nil {
+                        print("\(String(describing: error))")
+                    }
+                }
+            }
         }
 
     }
