@@ -10,22 +10,22 @@ import Foundation
 import KeychainAccess
 
 class ApplicationAssembly {
-
-    static var shared = ApplicationAssembly()
+  
+  static var shared = ApplicationAssembly()
+  
+  private(set) var userSession: UserSession!
+  
+  func assemble() {
+    userSession = makeUserSession()
+  }
+  
+  private func makeUserSession() -> UserSession {
+    let loginNetworkService = LoginNetworkService()
+    let keychain = Keychain(service: "com.PatientAccess.keychain")
+    let credentialsStorage = CredentialsStorageService(repository: keychain)
+    let userSession = UserSession(loginNetworkService: loginNetworkService, credentialsStorage: credentialsStorage)
     
-    private(set) var userSession: UserSession!
-    
-    func assemble() {
-        userSession = makeUserSession()
-    }
-    
-    private func makeUserSession() -> UserSession {
-        let loginNetworkService = LoginNetworkService()
-        let keychain = Keychain(service: "com.PatientAccess.keychain")
-        let credentialsStorage = CredentialsStorageService(repository: keychain)
-        let userSession = UserSession(loginNetworkService: loginNetworkService, credentialsStorage: credentialsStorage)
-        
-        return userSession
-    }
-
+    return userSession
+  }
+  
 }

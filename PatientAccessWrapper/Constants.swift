@@ -9,7 +9,6 @@
 import Foundation
 
 enum APIEndpoints {
-    static let baseURL = "demo266.dataart.com/"
-    
-    static let anchors = "api/api/healthkit/anchors"
+  static let baseURL = "demo266.dataart.com/"
+  static let anchors = "api/api/healthkit/anchors"
 }

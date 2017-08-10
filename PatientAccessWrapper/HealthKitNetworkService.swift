@@ -11,18 +11,18 @@ import Foundation
 typealias GetAnchorsCompletion = (RequestResult<Any>) -> Void
 
 protocol HealthKitNetworkServiceInterface {
-    func getAnchors(uuidString: String, completion: @escaping GetAnchorsCompletion)
+  func getAnchors(uuidString: String, completion: @escaping GetAnchorsCompletion)
 }
 
 final class HealthKitNetworkService: HealthKitNetworkServiceInterface {
-
-    // MARK: - Private properties
-    private let apiClient = APIClient()
-
-    // MARK: - Methods
-
-    func getAnchors(uuidString: String, completion: @escaping GetAnchorsCompletion) {
-        let getAnchorsRequest = GetAnchorsRequest(uuidString)
-        apiClient.performRequest(getAnchorsRequest).handleResult(completion: completion)
-    }
+  
+  // MARK: - Private properties
+  private let apiClient = APIClient()
+  
+  // MARK: - Methods
+  
+  func getAnchors(uuidString: String, completion: @escaping GetAnchorsCompletion) {
+    let getAnchorsRequest = GetAnchorsRequest(uuidString)
+    apiClient.performRequest(getAnchorsRequest).handleResult(completion: completion)
+  }
 }

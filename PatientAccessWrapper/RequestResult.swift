@@ -9,8 +9,8 @@
 import Foundation
 
 public enum RequestResult<Value> {
-    case success(Value)
-    case failure(Error)
+  case success(Value)
+  case failure(Error)
 }
 
 typealias VoidRequestResult = (RequestResult<Void>) -> Void

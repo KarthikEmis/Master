@@ -88,6 +88,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D30C3E701F38B22600A7F4FD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D310C1961F26224D00DD3F05 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		D310C1881F26224D00DD3F05 = {
 			isa = PBXGroup;
 			children = (
@@ -110,10 +118,10 @@
 			isa = PBXGroup;
 			children = (
 				D30C3E671F373B1800A7F4FD /* PatientAccessWrapper.entitlements */,
+				D30C3E701F38B22600A7F4FD /* View Controllers */,
 				D33954961F33417C00D11946 /* Data Models */,
 				D33954821F32055200D11946 /* Services */,
 				D310C1941F26224D00DD3F05 /* AppDelegate.swift */,
-				D310C1961F26224D00DD3F05 /* ViewController.swift */,
 				D310C1981F26224D00DD3F05 /* Main.storyboard */,
 				D310C19B1F26224D00DD3F05 /* Assets.xcassets */,
 				D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */,
