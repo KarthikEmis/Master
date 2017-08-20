@@ -25,6 +25,21 @@ class APIClient {
       configuration: configuration,
       serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies)
     )
+    
+    manager.delegate.taskDidReceiveChallenge = { session, _, challenge in
+      print("Got challenge: \(challenge), in session \(session)")
+      var disposition: URLSession.AuthChallengeDisposition = .useCredential
+      var credential: URLCredential = URLCredential()
+      
+      if (challenge.protectionSpace.authenticationMethod == NSURLAuthenticationMethodServerTrust){
+        disposition = URLSession.AuthChallengeDisposition.useCredential
+        //credential = URLCredential(forTrust: challenge.protectionSpace.serverTrust!)
+        credential = URLCredential(trust: challenge.protectionSpace.serverTrust!)
+
+      }
+      return(disposition, credential)
+    }
+    
     return manager
   }()
   
@@ -51,7 +66,7 @@ class APIClient {
     let apiRequest = manager.request(
       url,
       method: request.method,
-      parameters: request.parameters,
+      parameters: nil,
       encoding: request.encoding,
       headers: headers
     )

@@ -11,11 +11,25 @@
 		D30C3E661F34B8FD00A7F4FD /* HealthKitNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E651F34B8FD00A7F4FD /* HealthKitNetworkService.swift */; };
 		D30C3E691F373B1800A7F4FD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C3E681F373B1800A7F4FD /* HealthKit.framework */; };
 		D30C3E6D1F373B9B00A7F4FD /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E6C1F373B9B00A7F4FD /* HealthManager.swift */; };
+		D30C3E721F3C55BD00A7F4FD /* HealthKitQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E711F3C55BD00A7F4FD /* HealthKitQuery.swift */; };
+		D30C3E741F3C55D000A7F4FD /* HealthKitQueryCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E731F3C55D000A7F4FD /* HealthKitQueryCollection.swift */; };
 		D310C1951F26224D00DD3F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1941F26224D00DD3F05 /* AppDelegate.swift */; };
 		D310C1971F26224D00DD3F05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1961F26224D00DD3F05 /* ViewController.swift */; };
 		D310C19A1F26224D00DD3F05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C1981F26224D00DD3F05 /* Main.storyboard */; };
 		D310C19C1F26224D00DD3F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D310C19B1F26224D00DD3F05 /* Assets.xcassets */; };
 		D310C19F1F26224D00DD3F05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */; };
+		D314FA4E1F447938000BC308 /* HealthKitMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA4D1F447938000BC308 /* HealthKitMessage.swift */; };
+		D314FA581F45B3C1000BC308 /* HealthKitSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA571F45B3C1000BC308 /* HealthKitSample.swift */; };
+		D314FA5A1F45B3D0000BC308 /* HealthKitSampleCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA591F45B3D0000BC308 /* HealthKitSampleCollection.swift */; };
+		D314FA5C1F45B3DD000BC308 /* HealthKitSampleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA5B1F45B3DD000BC308 /* HealthKitSampleType.swift */; };
+		D314FA5E1F45B3EA000BC308 /* HealthKitSampleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA5D1F45B3EA000BC308 /* HealthKitSampleValue.swift */; };
+		D314FA601F45B3FB000BC308 /* HealthKitQuantitySampleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA5F1F45B3FB000BC308 /* HealthKitQuantitySampleValue.swift */; };
+		D314FA621F45B40D000BC308 /* HealthKitCorrelationSampleValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA611F45B40D000BC308 /* HealthKitCorrelationSampleValue.swift */; };
+		D314FA641F45C0E4000BC308 /* HealthKitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA631F45C0E4000BC308 /* HealthKitUser.swift */; };
+		D314FA661F45C0F5000BC308 /* HealthKitAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA651F45C0F5000BC308 /* HealthKitAnchorPoint.swift */; };
+		D314FA681F45C100000BC308 /* HealthKitAnchorDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA671F45C100000BC308 /* HealthKitAnchorDate.swift */; };
+		D314FA6A1F45C2A3000BC308 /* PostHealthKitDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA691F45C2A3000BC308 /* PostHealthKitDataRequest.swift */; };
+		D314FA6C1F45CC5C000BC308 /* HealthKitAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA6B1F45CC5C000BC308 /* HealthKitAnchor.swift */; };
 		D33954811F31F45A00D11946 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954801F31F45A00D11946 /* Constants.swift */; };
 		D33954861F32078B00D11946 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954851F32078A00D11946 /* RequestType.swift */; };
 		D33954881F32079A00D11946 /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954871F32079A00D11946 /* RequestResult.swift */; };
@@ -37,6 +51,8 @@
 		D30C3E671F373B1800A7F4FD /* PatientAccessWrapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PatientAccessWrapper.entitlements; sourceTree = "<group>"; };
 		D30C3E681F373B1800A7F4FD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		D30C3E6C1F373B9B00A7F4FD /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		D30C3E711F3C55BD00A7F4FD /* HealthKitQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitQuery.swift; sourceTree = "<group>"; };
+		D30C3E731F3C55D000A7F4FD /* HealthKitQueryCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitQueryCollection.swift; sourceTree = "<group>"; };
 		D310C1911F26224D00DD3F05 /* PatientAccessWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientAccessWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D310C1941F26224D00DD3F05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D310C1961F26224D00DD3F05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +60,18 @@
 		D310C19B1F26224D00DD3F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D310C19E1F26224D00DD3F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D310C1A01F26224D00DD3F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D314FA4D1F447938000BC308 /* HealthKitMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitMessage.swift; sourceTree = "<group>"; };
+		D314FA571F45B3C1000BC308 /* HealthKitSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitSample.swift; sourceTree = "<group>"; };
+		D314FA591F45B3D0000BC308 /* HealthKitSampleCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitSampleCollection.swift; sourceTree = "<group>"; };
+		D314FA5B1F45B3DD000BC308 /* HealthKitSampleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitSampleType.swift; sourceTree = "<group>"; };
+		D314FA5D1F45B3EA000BC308 /* HealthKitSampleValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitSampleValue.swift; sourceTree = "<group>"; };
+		D314FA5F1F45B3FB000BC308 /* HealthKitQuantitySampleValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitQuantitySampleValue.swift; sourceTree = "<group>"; };
+		D314FA611F45B40D000BC308 /* HealthKitCorrelationSampleValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitCorrelationSampleValue.swift; sourceTree = "<group>"; };
+		D314FA631F45C0E4000BC308 /* HealthKitUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitUser.swift; sourceTree = "<group>"; };
+		D314FA651F45C0F5000BC308 /* HealthKitAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitAnchorPoint.swift; sourceTree = "<group>"; };
+		D314FA671F45C100000BC308 /* HealthKitAnchorDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitAnchorDate.swift; sourceTree = "<group>"; };
+		D314FA691F45C2A3000BC308 /* PostHealthKitDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHealthKitDataRequest.swift; sourceTree = "<group>"; };
+		D314FA6B1F45CC5C000BC308 /* HealthKitAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitAnchor.swift; sourceTree = "<group>"; };
 		D33954801F31F45A00D11946 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D33954851F32078A00D11946 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		D33954871F32079A00D11946 /* RequestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestResult.swift; sourceTree = "<group>"; };
@@ -161,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				D33954891F3208F400D11946 /* GetAnchorsRequest.swift */,
+				D314FA691F45C2A3000BC308 /* PostHealthKitDataRequest.swift */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -169,6 +198,19 @@
 			isa = PBXGroup;
 			children = (
 				D33954991F33426E00D11946 /* BearerCredentials.swift */,
+				D30C3E711F3C55BD00A7F4FD /* HealthKitQuery.swift */,
+				D30C3E731F3C55D000A7F4FD /* HealthKitQueryCollection.swift */,
+				D314FA4D1F447938000BC308 /* HealthKitMessage.swift */,
+				D314FA571F45B3C1000BC308 /* HealthKitSample.swift */,
+				D314FA591F45B3D0000BC308 /* HealthKitSampleCollection.swift */,
+				D314FA5B1F45B3DD000BC308 /* HealthKitSampleType.swift */,
+				D314FA5D1F45B3EA000BC308 /* HealthKitSampleValue.swift */,
+				D314FA5F1F45B3FB000BC308 /* HealthKitQuantitySampleValue.swift */,
+				D314FA611F45B40D000BC308 /* HealthKitCorrelationSampleValue.swift */,
+				D314FA631F45C0E4000BC308 /* HealthKitUser.swift */,
+				D314FA651F45C0F5000BC308 /* HealthKitAnchorPoint.swift */,
+				D314FA671F45C100000BC308 /* HealthKitAnchorDate.swift */,
+				D314FA6B1F45CC5C000BC308 /* HealthKitAnchor.swift */,
 			);
 			name = "Data Models";
 			sourceTree = "<group>";
@@ -321,18 +363,32 @@
 			files = (
 				D33954881F32079A00D11946 /* RequestResult.swift in Sources */,
 				D310C1971F26224D00DD3F05 /* ViewController.swift in Sources */,
+				D314FA6C1F45CC5C000BC308 /* HealthKitAnchor.swift in Sources */,
+				D314FA601F45B3FB000BC308 /* HealthKitQuantitySampleValue.swift in Sources */,
 				D310C1951F26224D00DD3F05 /* AppDelegate.swift in Sources */,
+				D30C3E721F3C55BD00A7F4FD /* HealthKitQuery.swift in Sources */,
+				D314FA5C1F45B3DD000BC308 /* HealthKitSampleType.swift in Sources */,
 				D33954921F331B4E00D11946 /* APIClient.swift in Sources */,
+				D314FA641F45C0E4000BC308 /* HealthKitUser.swift in Sources */,
+				D314FA6A1F45C2A3000BC308 /* PostHealthKitDataRequest.swift in Sources */,
+				D314FA621F45B40D000BC308 /* HealthKitCorrelationSampleValue.swift in Sources */,
 				D30C3E6D1F373B9B00A7F4FD /* HealthManager.swift in Sources */,
+				D314FA4E1F447938000BC308 /* HealthKitMessage.swift in Sources */,
 				D339548A1F3208F400D11946 /* GetAnchorsRequest.swift in Sources */,
+				D314FA661F45C0F5000BC308 /* HealthKitAnchorPoint.swift in Sources */,
 				D33954941F33218200D11946 /* CredentialsStorageServiceImplementation.swift in Sources */,
+				D314FA5E1F45B3EA000BC308 /* HealthKitSampleValue.swift in Sources */,
 				D339548C1F3222BA00D11946 /* ApplicationAssembly.swift in Sources */,
 				D30C3E661F34B8FD00A7F4FD /* HealthKitNetworkService.swift in Sources */,
 				D33954901F322C7800D11946 /* LoginNetworkService.swift in Sources */,
 				D33954811F31F45A00D11946 /* Constants.swift in Sources */,
 				D33954861F32078B00D11946 /* RequestType.swift in Sources */,
 				D339549A1F33426E00D11946 /* BearerCredentials.swift in Sources */,
+				D30C3E741F3C55D000A7F4FD /* HealthKitQueryCollection.swift in Sources */,
+				D314FA681F45C100000BC308 /* HealthKitAnchorDate.swift in Sources */,
 				D339549C1F334E6900D11946 /* EntitySerializer.swift in Sources */,
+				D314FA581F45B3C1000BC308 /* HealthKitSample.swift in Sources */,
+				D314FA5A1F45B3D0000BC308 /* HealthKitSampleCollection.swift in Sources */,
 				D339548E1F32248E00D11946 /* UserSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

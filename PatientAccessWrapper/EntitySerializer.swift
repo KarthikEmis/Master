@@ -23,3 +23,20 @@ struct EntitySerializer<T: Mappable> {
     return DataRequest.ObjectMapperArraySerializer(keyPath)
   }
 }
+
+struct EmptySerializer {
+  
+  // MARK: - Empty serialization
+  static func serializer() -> DataResponseSerializer<Bool> {
+    return DataResponseSerializer { _, response, _, error in
+      if let response = response, response.statusCode >= 300 {
+        return .failure(errSecInternalError as! Error)
+      } else if let error = error {
+        return .failure(error)
+      }
+      
+      return .success(true)
+    }
+  }
+  
+}

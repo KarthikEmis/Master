@@ -17,17 +17,12 @@ class GetAnchorsRequest: RequestType {
   var method: HTTPMethod {
     return .get
   }
-  var parameters: [String: Any] {
-    var tempParameters: [String: Any] = [:]
-    
-    return tempParameters
-  }
   
   var encoding: ParameterEncoding {
     return JSONEncoding.default
   }
   
-  var responseSerializer: DataResponseSerializer<BearerCredentials> {
+  var responseSerializer: DataResponseSerializer<HealthKitAnchor> {
     return EntitySerializer.objectSerializer()
   }
   

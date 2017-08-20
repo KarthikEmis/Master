@@ -78,49 +78,27 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
   func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
     print(message.body)
     
-    
-    let dictionary = message.body as! Dictionary<String, Any>
-    
-    var request = URLRequest(url: URL(string: "https://pacweb.vrn.dataart.net/dev/api/api/healthkit/anchors")!)
-    request.httpMethod = "GET"
-    
-    let token = "Bearer " + (dictionary["body"] as! String)
-    request.setValue(token, forHTTPHeaderField: "Authorization")
-    let session = URLSession.shared
-    
-    session.dataTask(with: request) {data, response, err in
-      print("Entered the completionHandler")
-      }.resume()
-    
-    
     let uuid = UUID().uuidString
+//    let dictionary = message.body as! Dictionary<String, Any>
+//    
+//    var request = URLRequest(url: URL(string: "https://demo266.dataart.com/api/api/HealthKit/anchors/" + uuid)!)
+//    request.httpMethod = "GET"
+//    
+//    let token = "Bearer " + (dictionary["body"] as! String)
+//    request.setValue(token, forHTTPHeaderField: "Authorization")
+//    let session = URLSession.shared
+//    
+//    session.dataTask(with: request) {data, response, err in
+//      print("Entered the completionHandler")
+//      }.resume()
+//    
+    
     let userSession = ApplicationAssembly.shared.userSession
     
     userSession?.receivedToken(tokenString: (message.body as! Dictionary)["body"]!)
     networkService = HealthKitNetworkService()
     networkService?.getAnchors(uuidString:uuid) { [weak self] result in
       guard let strongSelf = self else { return }
-      //            switch result {
-      //            case .success(let response):
-      //                strongSelf.baseModel = response
-      //                if let appointments = response.appointments {
-      //                    strongSelf.list = appointments
-      //                }
-      //                tableDataSourse.canCancelAppointments = response.canCancelAppointments
-      //                tableDataSourse.canBookAppointments = response.canBookAppointments
-      //                tableDataSourse.historyAvailable = response.historyAvailable
-      //                strongSelf.filterList()
-      //                tableDataSourse.dataArrUpcomingArray = strongSelf.incomingList
-      //                tableDataSourse.dataArrPassedArray = strongSelf.passedList
-      //                tableDataSourse.reloadTableView()
-      //                strongSelf.endActivity()
-      //                break
-      //
-      //            case .failure(let error):
-      //                strongSelf.endActivity(with: error)
-      //                print(error)
-      //                break
-      //            }
       
       strongSelf.healthManager.authorizeHealthKit { (authorized,  error) -> Void in
         if authorized {
