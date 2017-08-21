@@ -10,5 +10,14 @@ import Foundation
 
 class HealthKitAnchorPoint {
   
+  private var number: NSNumber?
+
+  init(number: NSNumber?) {
+    self.number = number
+  }
+  
+  func value() -> NSNumber {
+    return self.number!
+  }
   
 }

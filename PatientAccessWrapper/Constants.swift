@@ -16,3 +16,4 @@ enum APIEndpoints {
 
 let sampleTypeConstant = "SampleType"
 let sampleUnitConstant = "SampleUnit"
+let AnchorDateMinimumDate = "2014-01-01T00:00:00"

@@ -10,7 +10,7 @@
 		4FE8FF18CF602D060D490850 /* Pods_PatientAccessWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E38D3DCC93BC67586BC604D /* Pods_PatientAccessWrapper.framework */; };
 		D30C3E661F34B8FD00A7F4FD /* HealthKitNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E651F34B8FD00A7F4FD /* HealthKitNetworkService.swift */; };
 		D30C3E691F373B1800A7F4FD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D30C3E681F373B1800A7F4FD /* HealthKit.framework */; };
-		D30C3E6D1F373B9B00A7F4FD /* HealthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E6C1F373B9B00A7F4FD /* HealthManager.swift */; };
+		D30C3E6D1F373B9B00A7F4FD /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E6C1F373B9B00A7F4FD /* HealthKitManager.swift */; };
 		D30C3E721F3C55BD00A7F4FD /* HealthKitQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E711F3C55BD00A7F4FD /* HealthKitQuery.swift */; };
 		D30C3E741F3C55D000A7F4FD /* HealthKitQueryCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E731F3C55D000A7F4FD /* HealthKitQueryCollection.swift */; };
 		D310C1951F26224D00DD3F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1941F26224D00DD3F05 /* AppDelegate.swift */; };
@@ -50,7 +50,7 @@
 		D30C3E651F34B8FD00A7F4FD /* HealthKitNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitNetworkService.swift; sourceTree = "<group>"; };
 		D30C3E671F373B1800A7F4FD /* PatientAccessWrapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PatientAccessWrapper.entitlements; sourceTree = "<group>"; };
 		D30C3E681F373B1800A7F4FD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		D30C3E6C1F373B9B00A7F4FD /* HealthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthManager.swift; sourceTree = "<group>"; };
+		D30C3E6C1F373B9B00A7F4FD /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		D30C3E711F3C55BD00A7F4FD /* HealthKitQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitQuery.swift; sourceTree = "<group>"; };
 		D30C3E731F3C55D000A7F4FD /* HealthKitQueryCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitQueryCollection.swift; sourceTree = "<group>"; };
 		D310C1911F26224D00DD3F05 /* PatientAccessWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientAccessWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,7 +162,7 @@
 		D33954821F32055200D11946 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				D30C3E6C1F373B9B00A7F4FD /* HealthManager.swift */,
+				D30C3E6C1F373B9B00A7F4FD /* HealthKitManager.swift */,
 				D339548D1F32248E00D11946 /* UserSession.swift */,
 				D33954931F33218200D11946 /* CredentialsStorageServiceImplementation.swift */,
 				D33954831F32056300D11946 /* Networking */,
@@ -199,8 +199,8 @@
 			children = (
 				D33954991F33426E00D11946 /* BearerCredentials.swift */,
 				D30C3E711F3C55BD00A7F4FD /* HealthKitQuery.swift */,
-				D30C3E731F3C55D000A7F4FD /* HealthKitQueryCollection.swift */,
 				D314FA4D1F447938000BC308 /* HealthKitMessage.swift */,
+				D30C3E731F3C55D000A7F4FD /* HealthKitQueryCollection.swift */,
 				D314FA571F45B3C1000BC308 /* HealthKitSample.swift */,
 				D314FA591F45B3D0000BC308 /* HealthKitSampleCollection.swift */,
 				D314FA5B1F45B3DD000BC308 /* HealthKitSampleType.swift */,
@@ -372,7 +372,7 @@
 				D314FA641F45C0E4000BC308 /* HealthKitUser.swift in Sources */,
 				D314FA6A1F45C2A3000BC308 /* PostHealthKitDataRequest.swift in Sources */,
 				D314FA621F45B40D000BC308 /* HealthKitCorrelationSampleValue.swift in Sources */,
-				D30C3E6D1F373B9B00A7F4FD /* HealthManager.swift in Sources */,
+				D30C3E6D1F373B9B00A7F4FD /* HealthKitManager.swift in Sources */,
 				D314FA4E1F447938000BC308 /* HealthKitMessage.swift in Sources */,
 				D339548A1F3208F400D11946 /* GetAnchorsRequest.swift in Sources */,
 				D314FA661F45C0F5000BC308 /* HealthKitAnchorPoint.swift in Sources */,

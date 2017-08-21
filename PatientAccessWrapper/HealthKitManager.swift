@@ -9,9 +9,17 @@
 import Foundation
 import HealthKit
 
-class HealthManager {
+class HealthKitManager {
   
-  let healthKitStore = HKHealthStore()
+  let healthKitStore : HKHealthStore
+  
+  init () {
+    if !HKHealthStore.class {
+      return nil
+    }
+    
+    self.healthKitStore = HKHealthStore()
+  }
   
   func authorizeHealthKit(completion: @escaping ((_ success:Bool, _ error:Error?) -> Void))
   {

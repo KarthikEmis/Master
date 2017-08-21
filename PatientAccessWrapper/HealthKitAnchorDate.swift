@@ -7,3 +7,27 @@
 //
 
 import Foundation
+
+class HealthKitAnchorDate {
+  
+  private var dateString: String?
+
+  init(string: String?) {
+    self.dateString = (string != nil) ? string : AnchorDateMinimumDate
+  }
+  
+  func value() -> Date {
+    let dateFormatter = self.dateFormatter()
+    return dateFormatter.date(from: self.dateString!)!
+  }
+  
+  private func dateFormatter() -> DateFormatter {
+    let dateFormatter : DateFormatter = {
+      let dateFormatterInner = DateFormatter()
+      dateFormatterInner.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+      return dateFormatterInner
+    }()
+    return dateFormatter
+  }
+  
+}

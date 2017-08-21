@@ -17,9 +17,9 @@ class HealthKitSampleType {
     case SampleTypeSupportedTypesCumulative
   }
   
-  var sampleType:HKSampleType?
-  var sampleUnit:HKUnit?
-  var anchor:HealthKitAnchor?
+  var sampleType: HKSampleType?
+  var sampleUnit: HKUnit?
+  public var anchor: HealthKitAnchor?
   
   var isCumulativeType: Bool {
     let isStepCountType = self.sampleType?.isEqual(HKQuantityType.quantityType(forIdentifier:HKQuantityTypeIdentifier.stepCount))
