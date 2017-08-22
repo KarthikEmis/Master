@@ -13,7 +13,9 @@ import EventKit
 class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, URLSessionDelegate {
 
     @IBOutlet weak var webContainerView: UIView!
-    
+  
+    var wkWebView = WKWebView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,16 +42,20 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
         let config = WKWebViewConfiguration()
         config.userContentController = contentController
         
-        let wkWebView = WKWebView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: webContainerView.frame.height), configuration: config)
+        wkWebView = WKWebView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: webContainerView.frame.height), configuration: config)
         wkWebView.navigationDelegate = self
         wkWebView.uiDelegate = self as? WKUIDelegate
         wkWebView.scrollView.isScrollEnabled = true
         webContainerView.addSubview(wkWebView)
         
         wkWebView.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
+      
+        let userAgent = UIWebView().stringByEvaluatingJavaScript(from: "navigator.userAgent")! + " iOS/WebWrapper"
+        //UserDefaults.standard.register(defaults: ["UserAgent": userAgent])
+        wkWebView.customUserAgent = "iOS/WebWrapper"
         UserDefaults.standard.register(defaults: ["UserAgent": "iOS/WebWrapper"])
 
-        if let url = URL(string: "https://pacweb.vrn.dataart.net/dev/") {
+        if let url = URL(string: "https://alpha-web.patient-access.co.uk/") {
             wkWebView.load(URLRequest(url: url))
         }
         
@@ -125,8 +131,17 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
         print(message.body)
       
       let link = "https://1fichier.com/?cx6r8k9uq7"
+      var urlString = ""
+      if let linkUrl = (message.body as! Dictionary <String, String>)["name"] {
+        if linkUrl == "iCal" {
+          urlString = (message.body as! Dictionary <String, String>)["body"]!
+        } else {
+          return
+        }
+        print(linkUrl)
+      }
       
-      let webcal = NSURL(string: link)
+      let webcal = NSURL(string: urlString)
       //UIApplication.shared.openURL(webcal! as URL)
       //UIApplication.shared.open(webcal! as URL, options: [:]) { (Bool) in}
       
@@ -139,7 +154,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
         let eventStore = EKEventStore()
         
         for event : MXLCalendarEvent in eventsArray {
-          let calendarEvent = event.convertToEKEvent(on: Date(), store: eventStore)!
+          let calendarEvent = event.convertToEKEvent(on: event.eventStartDate, store: eventStore)!
           calendarEvent.calendar = eventStore.defaultCalendarForNewEvents
           
           eventStore.requestAccess(to: .event) { [weak self] (granted, error) in
@@ -211,7 +226,10 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        
+      //https://stackoverflow.com/a/25647768
+      let javascriptString = "var meta = document.createElement('meta');meta.setAttribute('name', 'viewport');meta.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no');document.getElementsByTagName('head')[0].appendChild(meta);"
+      
+          webView.evaluateJavaScript(javascriptString, completionHandler: nil)
         
     }
     
@@ -220,3 +238,4 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
         // Dispose of any resources that can be recreated.
     }
 }
+
