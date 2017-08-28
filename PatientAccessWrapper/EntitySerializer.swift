@@ -29,8 +29,8 @@ struct EmptySerializer {
   // MARK: - Empty serialization
   static func serializer() -> DataResponseSerializer<Bool> {
     return DataResponseSerializer { _, response, _, error in
-      if let response = response, response.statusCode >= 300 {
-        return .failure(errSecInternalError as! Error)
+      if let response = response, response.statusCode >= 300, let error = error {
+        return .failure(error)
       } else if let error = error {
         return .failure(error)
       }

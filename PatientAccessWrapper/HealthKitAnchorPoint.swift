@@ -8,7 +8,7 @@
 
 import Foundation
 
-class HealthKitAnchorPoint {
+class HealthKitAnchorPoint: Anchor {
   
   private var number: NSNumber?
 
@@ -16,7 +16,11 @@ class HealthKitAnchorPoint {
     self.number = number
   }
   
-  func value() -> NSNumber {
+//  func value() -> NSNumber {
+//    return self.number!
+//  }
+  
+  var value: Any {
     return self.number!
   }
   

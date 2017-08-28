@@ -22,6 +22,10 @@ class GetAnchorsRequest: RequestType {
     return JSONEncoding.default
   }
   
+  var parameters: [String: Any]? {
+    return nil
+  }
+  
   var responseSerializer: DataResponseSerializer<HealthKitAnchor> {
     return EntitySerializer.objectSerializer()
   }

@@ -13,7 +13,7 @@ import HealthKit
 class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, URLSessionDelegate {
   
   private var networkService: HealthKitNetworkServiceInterface?
-  let healthManager = HealthManager()
+  let healthManager = HealthKitManager.sharedInstance
   
   @IBOutlet weak var webContainerView: UIView!
   
@@ -46,7 +46,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     let wkWebView = WKWebView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: webContainerView.frame.height), configuration: config)
     wkWebView.navigationDelegate = self
     wkWebView.uiDelegate = self as? WKUIDelegate
-    wkWebView.scrollView.isScrollEnabled = false
+    wkWebView.scrollView.isScrollEnabled = true
     webContainerView.addSubview(wkWebView)
     
     wkWebView.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
@@ -78,7 +78,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
   func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
     print(message.body)
     
-    let uuid = UUID().uuidString
+    let uuid = UIDevice.current.identifierForVendor?.uuidString
 //    let dictionary = message.body as! Dictionary<String, Any>
 //    
 //    var request = URLRequest(url: URL(string: "https://demo266.dataart.com/api/api/HealthKit/anchors/" + uuid)!)
@@ -97,8 +97,34 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     
     userSession?.receivedToken(tokenString: (message.body as! Dictionary)["body"]!)
     networkService = HealthKitNetworkService()
-    networkService?.getAnchors(uuidString:uuid) { [weak self] result in
+    networkService?.getAnchors(uuidString:uuid!) { [weak self] result in
       guard let strongSelf = self else { return }
+      
+      switch result {
+      case .success(let response):
+
+        let queryCollection = HealthKitQueryCollection.queryCollectionForSampleTypes((response as! HealthKitAnchor).sampleTypes)
+        queryCollection.performQueriesWith(completionHandler: { (results) in
+          
+          let message = HealthKitMessage(withSampleCollections: results)
+          strongSelf.networkService?.postHealthKitData(message: message, completion: {result in
+            switch result {
+            case .success(let response):
+              print("HealthKit data uploaded successfully")
+              break
+            case .failure(let error):
+              print(error)
+              break
+            }
+          })
+        })
+
+        break
+        
+      case .failure(let error):
+        print(error)
+        break
+      }
       
       strongSelf.healthManager.authorizeHealthKit { (authorized,  error) -> Void in
         if authorized {
@@ -112,6 +138,8 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
           }
         }
       }
+      
+      
     }
     
   }

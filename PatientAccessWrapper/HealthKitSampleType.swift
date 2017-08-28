@@ -19,7 +19,7 @@ class HealthKitSampleType {
   
   var sampleType: HKSampleType?
   var sampleUnit: HKUnit?
-  public var anchor: HealthKitAnchor?
+  public var anchor: Anchor?
   
   var isCumulativeType: Bool {
     let isStepCountType = self.sampleType?.isEqual(HKQuantityType.quantityType(forIdentifier:HKQuantityTypeIdentifier.stepCount))
@@ -35,13 +35,13 @@ class HealthKitSampleType {
   }
   
   
-  init(sampleType: HKSampleType?, unit: HKUnit?, anchor:HealthKitAnchor?) {
+  init(sampleType: HKSampleType?, unit: HKUnit?, anchor:Anchor?) {
     self.sampleType = sampleType
     self.sampleUnit = unit
     self.anchor = anchor
   }
   
-  class func supportedTypes(types: SampleTypeSupportedTypes) -> Dictionary<AnyHashable, Dictionary<String, Any>> {
+  class func supportedTypes(types: SampleTypeSupportedTypes) -> Dictionary<String, Dictionary<String, Any>> {
     
     switch types {
     case .SampleTypeSupportedTypesAll:
@@ -56,53 +56,53 @@ class HealthKitSampleType {
     
   }
   
-  private class func discreteTypes() -> Dictionary<AnyHashable, Dictionary<String, Any>> {
-    return [HKQuantityTypeIdentifier.height:
+  private class func discreteTypes() -> Dictionary<String, Dictionary<String, Any>> {
+    return [HKQuantityTypeIdentifier.height.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height)!,
              sampleUnitConstant:HKUnit.meterUnit(with: HKMetricPrefix.centi)],
             
-           HKQuantityTypeIdentifier.bodyMass:
+           HKQuantityTypeIdentifier.bodyMass.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass)!,
              sampleUnitConstant:HKUnit.gramUnit(with: HKMetricPrefix.kilo)],
       
-           HKQuantityTypeIdentifier.heartRate:
+           HKQuantityTypeIdentifier.heartRate.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate)!,
              sampleUnitConstant:HKUnit.unitDivided(HKUnit.minute())],
       
-           HKQuantityTypeIdentifier.oxygenSaturation:
+           HKQuantityTypeIdentifier.oxygenSaturation.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.oxygenSaturation)!,
              sampleUnitConstant:HKUnit.percent()],
       
-           HKQuantityTypeIdentifier.bloodGlucose:
+           HKQuantityTypeIdentifier.bloodGlucose.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bloodGlucose)!,
              sampleUnitConstant:HKUnit.moleUnit(with: HKMetricPrefix.milli,
                                     molarMass:HKUnitMolarMassBloodGlucose).unitDivided(by: HKUnit.liter())],
       
-           HKQuantityTypeIdentifier.respiratoryRate:
+           HKQuantityTypeIdentifier.respiratoryRate.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.respiratoryRate)!,
              sampleUnitConstant:HKUnit.count().unitDivided(by: HKUnit.minute())],
       
-           HKQuantityTypeIdentifier.bodyTemperature:
+           HKQuantityTypeIdentifier.bodyTemperature.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyTemperature)!,
              sampleUnitConstant:HKUnit.degreeCelsius()],
       
-           HKQuantityTypeIdentifier.bodyMassIndex:
+           HKQuantityTypeIdentifier.bodyMassIndex.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMassIndex)!,
              sampleUnitConstant:HKUnit.count()],
       
-           HKQuantityTypeIdentifier.forcedVitalCapacity:
+           HKQuantityTypeIdentifier.forcedVitalCapacity.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.forcedVitalCapacity)!,
              sampleUnitConstant:HKUnit.liter()],
       
-           HKQuantityTypeIdentifier.forcedExpiratoryVolume1:
+           HKQuantityTypeIdentifier.forcedExpiratoryVolume1.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.forcedExpiratoryVolume1)!,
              sampleUnitConstant:HKUnit.liter()],
       
-           HKQuantityTypeIdentifier.peakExpiratoryFlowRate:
+           HKQuantityTypeIdentifier.peakExpiratoryFlowRate.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.peakExpiratoryFlowRate)!,
              sampleUnitConstant:HKUnit(from:"L/min")],
       
-           HKCorrelationTypeIdentifier.bloodPressure:
+           HKCorrelationTypeIdentifier.bloodPressure.rawValue:
              [sampleTypeConstant:HKCorrelationType.correlationType(forIdentifier: HKCorrelationTypeIdentifier.bloodPressure)!,
              sampleUnitConstant:HKUnit.millimeterOfMercury()]
     ]
@@ -110,12 +110,12 @@ class HealthKitSampleType {
     
   }
   
-  private class func cumulativeTypes() -> Dictionary<AnyHashable, Dictionary<String, Any>> {
-    return [HKQuantityTypeIdentifier.distanceWalkingRunning:
+  private class func cumulativeTypes() -> Dictionary<String, Dictionary<String, Any>> {
+    return [HKQuantityTypeIdentifier.distanceWalkingRunning.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!,
              sampleUnitConstant:HKUnit.meter()],
             
-           HKQuantityTypeIdentifier.stepCount:
+           HKQuantityTypeIdentifier.stepCount.rawValue:
              [sampleTypeConstant:HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!,
              sampleUnitConstant:HKUnit.count()]
     ]

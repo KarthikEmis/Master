@@ -11,13 +11,10 @@ import HealthKit
 
 class HealthKitManager {
   
+  static let sharedInstance = HealthKitManager()
   let healthKitStore : HKHealthStore
   
   init () {
-    if !HKHealthStore.class {
-      return nil
-    }
-    
     self.healthKitStore = HKHealthStore()
   }
   

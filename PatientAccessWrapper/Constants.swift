@@ -9,9 +9,11 @@
 import Foundation
 
 enum APIEndpoints {
+//  static let baseURL = "alpha-web.patient-access.co.uk/"
   static let baseURL = "demo266.dataart.com/"
+
   static let anchors = "api/api/HealthKit/anchors"
-  static let postHealthKitData = "api/HealthKit/data"
+  static let postHealthKitData = "api/api/HealthKit/data"
 }
 
 let sampleTypeConstant = "SampleType"

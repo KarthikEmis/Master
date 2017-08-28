@@ -18,9 +18,11 @@ class PostHealthKitDataRequest: RequestType {
     return .post
   }
   
-//  var parameters: [String: Any] {
-//    return tempParameters
-//  }
+  var parameters: [String: Any] {
+    var tempParameters: [String: Any] = [:]
+    tempParameters["jsonData"] = message.jsonRepresentation()
+    return tempParameters
+  }
   
   var encoding: ParameterEncoding {
     return JSONEncoding.default

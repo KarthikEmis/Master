@@ -8,7 +8,7 @@
 
 import Foundation
 
-class HealthKitAnchorDate {
+class HealthKitAnchorDate: Anchor {
   
   private var dateString: String?
 
@@ -16,7 +16,12 @@ class HealthKitAnchorDate {
     self.dateString = (string != nil) ? string : AnchorDateMinimumDate
   }
   
-  func value() -> Date {
+//  func value() -> Date {
+//    let dateFormatter = self.dateFormatter()
+//    return dateFormatter.date(from: self.dateString!)!
+//  }
+  
+  var value: Any {
     let dateFormatter = self.dateFormatter()
     return dateFormatter.date(from: self.dateString!)!
   }

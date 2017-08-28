@@ -30,6 +30,7 @@
 		D314FA681F45C100000BC308 /* HealthKitAnchorDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA671F45C100000BC308 /* HealthKitAnchorDate.swift */; };
 		D314FA6A1F45C2A3000BC308 /* PostHealthKitDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA691F45C2A3000BC308 /* PostHealthKitDataRequest.swift */; };
 		D314FA6C1F45CC5C000BC308 /* HealthKitAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA6B1F45CC5C000BC308 /* HealthKitAnchor.swift */; };
+		D314FA6F1F4F1F4C000BC308 /* Calendar+HealthKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D314FA6E1F4F1F4C000BC308 /* Calendar+HealthKit.swift */; };
 		D33954811F31F45A00D11946 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954801F31F45A00D11946 /* Constants.swift */; };
 		D33954861F32078B00D11946 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954851F32078A00D11946 /* RequestType.swift */; };
 		D33954881F32079A00D11946 /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33954871F32079A00D11946 /* RequestResult.swift */; };
@@ -72,6 +73,7 @@
 		D314FA671F45C100000BC308 /* HealthKitAnchorDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitAnchorDate.swift; sourceTree = "<group>"; };
 		D314FA691F45C2A3000BC308 /* PostHealthKitDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostHealthKitDataRequest.swift; sourceTree = "<group>"; };
 		D314FA6B1F45CC5C000BC308 /* HealthKitAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitAnchor.swift; sourceTree = "<group>"; };
+		D314FA6E1F4F1F4C000BC308 /* Calendar+HealthKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+HealthKit.swift"; sourceTree = "<group>"; };
 		D33954801F31F45A00D11946 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D33954851F32078A00D11946 /* RequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		D33954871F32079A00D11946 /* RequestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestResult.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				D30C3E671F373B1800A7F4FD /* PatientAccessWrapper.entitlements */,
+				D314FA6D1F4F1EE3000BC308 /* Extensions */,
 				D30C3E701F38B22600A7F4FD /* View Controllers */,
 				D33954961F33417C00D11946 /* Data Models */,
 				D33954821F32055200D11946 /* Services */,
@@ -157,6 +160,14 @@
 				D33954801F31F45A00D11946 /* Constants.swift */,
 			);
 			path = PatientAccessWrapper;
+			sourceTree = "<group>";
+		};
+		D314FA6D1F4F1EE3000BC308 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D314FA6E1F4F1F4C000BC308 /* Calendar+HealthKit.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		D33954821F32055200D11946 /* Services */ = {
@@ -377,6 +388,7 @@
 				D339548A1F3208F400D11946 /* GetAnchorsRequest.swift in Sources */,
 				D314FA661F45C0F5000BC308 /* HealthKitAnchorPoint.swift in Sources */,
 				D33954941F33218200D11946 /* CredentialsStorageServiceImplementation.swift in Sources */,
+				D314FA6F1F4F1F4C000BC308 /* Calendar+HealthKit.swift in Sources */,
 				D314FA5E1F45B3EA000BC308 /* HealthKitSampleValue.swift in Sources */,
 				D339548C1F3222BA00D11946 /* ApplicationAssembly.swift in Sources */,
 				D30C3E661F34B8FD00A7F4FD /* HealthKitNetworkService.swift in Sources */,
