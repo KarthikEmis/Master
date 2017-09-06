@@ -10,6 +10,7 @@ abstract_target 'App' do
 
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'MobileCenter'
 
   target 'PatientAccessWrapper' do
   end

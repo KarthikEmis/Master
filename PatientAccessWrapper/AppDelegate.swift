@@ -9,6 +9,9 @@
 import UIKit
 import Fabric
 import Crashlytics
+import MobileCenter
+import MobileCenterAnalytics
+import MobileCenterCrashes
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Fabric.with([Crashlytics.self])
+      
+        MSMobileCenter.start("cae00b84-11f2-4022-b1f7-ece13efb9edf", withServices:[
+          MSAnalytics.self,
+          MSCrashes.self
+          ])
         return true
     }
 
