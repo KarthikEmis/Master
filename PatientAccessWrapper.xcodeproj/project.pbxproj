@@ -18,6 +18,11 @@
 		D310C19C1F26224D00DD3F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D310C19B1F26224D00DD3F05 /* Assets.xcassets */; };
 		D310C19F1F26224D00DD3F05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */; };
 		D310C1A91F28A47300DD3F05 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = D310C1A81F28A47300DD3F05 /* script.js */; };
+		D3164C0B1F602E7300A2966B /* MXLCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954711F2F5B0F00D11946 /* MXLCalendar.m */; };
+		D3164C0C1F602E7300A2966B /* MXLCalendarAttendee.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954731F2F5B0F00D11946 /* MXLCalendarAttendee.m */; };
+		D3164C0D1F602E7300A2966B /* MXLCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954751F2F5B0F00D11946 /* MXLCalendarEvent.m */; };
+		D3164C0E1F602E7300A2966B /* MXLCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954771F2F5B0F00D11946 /* MXLCalendarManager.m */; };
+		D3164C0F1F602E7300A2966B /* NSTimeZone+ProperAbbreviation.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954791F2F5B0F00D11946 /* NSTimeZone+ProperAbbreviation.m */; };
 		D339547A1F2F5B0F00D11946 /* MXLCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954711F2F5B0F00D11946 /* MXLCalendar.m */; };
 		D339547B1F2F5B0F00D11946 /* MXLCalendarAttendee.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954731F2F5B0F00D11946 /* MXLCalendarAttendee.m */; };
 		D339547C1F2F5B0F00D11946 /* MXLCalendarEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D33954751F2F5B0F00D11946 /* MXLCalendarEvent.m */; };
@@ -430,6 +435,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3164C0B1F602E7300A2966B /* MXLCalendar.m in Sources */,
+				D3164C0C1F602E7300A2966B /* MXLCalendarAttendee.m in Sources */,
+				D3164C0D1F602E7300A2966B /* MXLCalendarEvent.m in Sources */,
+				D3164C0E1F602E7300A2966B /* MXLCalendarManager.m in Sources */,
+				D3164C0F1F602E7300A2966B /* NSTimeZone+ProperAbbreviation.m in Sources */,
 				EA7FFF8C1F38503B006A23E9 /* ViewController.swift in Sources */,
 				EA7FFF8D1F38503B006A23E9 /* AppDelegate.swift in Sources */,
 				EA7FFF9C1F386866006A23E9 /* Constants.swift in Sources */,
@@ -598,6 +608,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.patient.PatientAccessWebWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -613,6 +624,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.patient.PatientAccessWebWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -697,6 +709,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.patient.PatientAccessWebWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEMO";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = "Debug Demo";
@@ -781,6 +794,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.patient.PatientAccessWebWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG TEST";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = "Debug Test";
@@ -856,6 +870,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.patient.PatientAccessWebWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEMO;
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = "Release Demo";
@@ -931,6 +946,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dataart.patient.PatientAccessWebWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = TEST;
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = "Release Test";
