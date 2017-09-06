@@ -11,11 +11,11 @@ import Foundation
 enum APIEndpoints {
   
 #if DEMO
-  static let baseURL = "demo266.dataart.com/"
+  static let baseURL = "demo-web.patient-access.co.uk/"
 #elseif TEST
-  static let baseURL = "pacweb.vrn.dataart.net/test/"
+  static let baseURL = "alpha-web.patient-access.co.uk/"
 #else
-  static let baseURL = "pacweb.vrn.dataart.net/dev/"
+  static let baseURL = "beta-web.patient-access.co.uk/"
 #endif
   
   static let anchors = "api/api/healthkit/anchors"
