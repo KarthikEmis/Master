@@ -240,10 +240,11 @@
 					D310C1901F26224D00DD3F05 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = UCVJ9Z823D;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					EAFA73B91F66ACEA00AAD0D4 = {
 						DevelopmentTeam = UCVJ9Z823D;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -536,13 +537,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -553,13 +555,14 @@
 			baseConfigurationReference = EF07FF62D8068B0C578C6EB5 /* Pods-App-PatientAccessWrapperDevelop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -621,13 +624,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -689,13 +693,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -751,13 +756,14 @@
 			baseConfigurationReference = 8D80FDFA044D2A14DA7059E3 /* Pods-App-PatientAccessWrapperDevelop.release demo.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -813,13 +819,14 @@
 			baseConfigurationReference = 616845696F1685F77A5A1980 /* Pods-App-PatientAccessWrapperDevelop.release test.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -881,13 +888,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -943,13 +951,14 @@
 			baseConfigurationReference = 85C973B9BE0C02F0402E3218 /* Pods-App-PatientAccessWrapperDevelop.release dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -961,13 +970,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapperRelease.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b13ee180-3de0-4a4b-bac5-758fca870b6b";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -979,13 +989,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapperRelease.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b13ee180-3de0-4a4b-bac5-758fca870b6b";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -997,13 +1008,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapperRelease.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b13ee180-3de0-4a4b-bac5-758fca870b6b";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1015,13 +1027,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapperRelease.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b13ee180-3de0-4a4b-bac5-758fca870b6b";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1032,13 +1045,14 @@
 			baseConfigurationReference = EF07FF62D8068B0C578C6EB5 /* Pods-App-PatientAccessWrapperDevelop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapperRelease.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b13ee180-3de0-4a4b-bac5-758fca870b6b";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1049,13 +1063,14 @@
 			baseConfigurationReference = 85C973B9BE0C02F0402E3218 /* Pods-App-PatientAccessWrapperDevelop.release dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapperRelease.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b13ee180-3de0-4a4b-bac5-758fca870b6b";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1066,13 +1081,14 @@
 			baseConfigurationReference = 616845696F1685F77A5A1980 /* Pods-App-PatientAccessWrapperDevelop.release test.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapperRelease.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b13ee180-3de0-4a4b-bac5-758fca870b6b";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1083,13 +1099,14 @@
 			baseConfigurationReference = 8D80FDFA044D2A14DA7059E3 /* Pods-App-PatientAccessWrapperDevelop.release demo.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UCVJ9Z823D;
 				INFOPLIST_FILE = PatientAccessWrapperRelease.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccess;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b13ee180-3de0-4a4b-bac5-758fca870b6b";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
