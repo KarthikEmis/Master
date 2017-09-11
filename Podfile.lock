@@ -1,7 +1,4 @@
 PODS:
-  - Crashlytics (3.8.5):
-    - Fabric (~> 1.6.3)
-  - Fabric (1.6.12)
   - MobileCenter (0.11.0):
     - MobileCenter/Analytics (= 0.11.0)
     - MobileCenter/Crashes (= 0.11.0)
@@ -12,15 +9,11 @@ PODS:
     - MobileCenter/Core
 
 DEPENDENCIES:
-  - Crashlytics
-  - Fabric
   - MobileCenter
 
 SPEC CHECKSUMS:
-  Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
-  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
   MobileCenter: 918ffeab6f98aa0d9b617906d406f59e6bdbcbe2
 
-PODFILE CHECKSUM: 465ff8873bdf75f3f89229f45ef857c15d222a76
+PODFILE CHECKSUM: 25c9fc112b78ad90745c420cc4ac899e2ae77fea
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.1

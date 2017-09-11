@@ -8,13 +8,11 @@ abstract_target 'App' do
 
   # Pods for PatientAccessWrapper
 
-  pod 'Fabric'
-  pod 'Crashlytics'
   pod 'MobileCenter'
 
-  target 'PatientAccessWrapper' do
+  target 'PatientAccessWrapperRelease' do
   end
 
-  target 'PatientAccessWrapperTC' do
+  target 'PatientAccessWrapperDevelop' do
   end
 end

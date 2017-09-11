@@ -12,10 +12,12 @@ enum APIEndpoints {
   
 #if DEMO
   static let baseURL = "demo-web.patient-access.co.uk/"
-#elseif TEST
+#elseif DEV
   static let baseURL = "alpha-web.patient-access.co.uk/"
-#else
+#elseif TEST
   static let baseURL = "beta-web.patient-access.co.uk/"
+#else
+  static let baseURL = "demo-web.patient-access.co.uk/"
 #endif
   
   static let anchors = "api/api/healthkit/anchors"
