@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43E16C94B1A28ABBD41F6107 /* Pods_App_PatientAccessWrapperDevelop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59D2D19A2AAE36334259E20F /* Pods_App_PatientAccessWrapperDevelop.framework */; };
 		D30C3E6F1F385DE200A7F4FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E6E1F385DE200A7F4FD /* Constants.swift */; };
 		D310C1951F26224D00DD3F05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1941F26224D00DD3F05 /* AppDelegate.swift */; };
 		D310C1971F26224D00DD3F05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1961F26224D00DD3F05 /* ViewController.swift */; };
@@ -14,6 +15,7 @@
 		D310C19C1F26224D00DD3F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D310C19B1F26224D00DD3F05 /* Assets.xcassets */; };
 		D310C19F1F26224D00DD3F05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */; };
 		D310C1A91F28A47300DD3F05 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = D310C1A81F28A47300DD3F05 /* script.js */; };
+		D9E5AF07810D546C6A061ECE /* Pods_App_PatientAccessWrapperRelease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A56349A1FBC285B69C3FE /* Pods_App_PatientAccessWrapperRelease.framework */; };
 		EAFA73BD1F66ACEA00AAD0D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1961F26224D00DD3F05 /* ViewController.swift */; };
 		EAFA73C01F66ACEA00AAD0D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1941F26224D00DD3F05 /* AppDelegate.swift */; };
 		EAFA73C31F66ACEA00AAD0D4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3E6E1F385DE200A7F4FD /* Constants.swift */; };
@@ -35,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		34D0A5A202BDD907C0F96F61 /* Pods-App-PatientAccessWrapperRelease.debug demo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.debug demo.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.debug demo.xcconfig"; sourceTree = "<group>"; };
+		59D2D19A2AAE36334259E20F /* Pods_App_PatientAccessWrapperDevelop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_PatientAccessWrapperDevelop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60099CC283A7180039B22D58 /* Pods-App-PatientAccessWrapperRelease.debug test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.debug test.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.debug test.xcconfig"; sourceTree = "<group>"; };
 		616845696F1685F77A5A1980 /* Pods-App-PatientAccessWrapperDevelop.release test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperDevelop.release test.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop.release test.xcconfig"; sourceTree = "<group>"; };
 		6342599ACC337407630B5809 /* Pods-App-PatientAccessWrapperRelease.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.debug.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +75,7 @@
 		EEA04A68853AF9E7F48E173B /* Pods-App-PatientAccessWrapperRelease.release dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.release dev.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.release dev.xcconfig"; sourceTree = "<group>"; };
 		EF07FF62D8068B0C578C6EB5 /* Pods-App-PatientAccessWrapperDevelop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperDevelop.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop.release.xcconfig"; sourceTree = "<group>"; };
 		EF8E9ECF61052CC94BF26B32 /* Pods-App-PatientAccessWrapperDevelop.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperDevelop.debug dev.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop.debug dev.xcconfig"; sourceTree = "<group>"; };
+		F28A56349A1FBC285B69C3FE /* Pods_App_PatientAccessWrapperRelease.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_PatientAccessWrapperRelease.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E16C94B1A28ABBD41F6107 /* Pods_App_PatientAccessWrapperDevelop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E5AF07810D546C6A061ECE /* Pods_App_PatientAccessWrapperRelease.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				EAFA73D81F66B29200AAD0D4 /* iCal */,
+				59D2D19A2AAE36334259E20F /* Pods_App_PatientAccessWrapperDevelop.framework */,
+				F28A56349A1FBC285B69C3FE /* Pods_App_PatientAccessWrapperRelease.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -365,7 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EAFA73CC1F66ACEA00AAD0D4 /* [CP] Copy Pods Resources */ = {
@@ -380,7 +388,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -966,7 +974,7 @@
 		};
 		EAFA73CE1F66ACEA00AAD0D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B08EE2D029196826D073E880 /* Pods-App-PatientAccessWrapperDevelop.debug.xcconfig */;
+			baseConfigurationReference = 6342599ACC337407630B5809 /* Pods-App-PatientAccessWrapperRelease.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
@@ -985,7 +993,7 @@
 		};
 		EAFA73CF1F66ACEA00AAD0D4 /* Debug Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF8E9ECF61052CC94BF26B32 /* Pods-App-PatientAccessWrapperDevelop.debug dev.xcconfig */;
+			baseConfigurationReference = 7917B35BF9F614D9B9246FB1 /* Pods-App-PatientAccessWrapperRelease.debug dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
@@ -1004,7 +1012,7 @@
 		};
 		EAFA73D01F66ACEA00AAD0D4 /* Debug Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A46321444D83324D4F0981E1 /* Pods-App-PatientAccessWrapperDevelop.debug test.xcconfig */;
+			baseConfigurationReference = 60099CC283A7180039B22D58 /* Pods-App-PatientAccessWrapperRelease.debug test.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
@@ -1023,7 +1031,7 @@
 		};
 		EAFA73D11F66ACEA00AAD0D4 /* Debug Demo */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA5BE3096B99C35872384C08 /* Pods-App-PatientAccessWrapperDevelop.debug demo.xcconfig */;
+			baseConfigurationReference = 34D0A5A202BDD907C0F96F61 /* Pods-App-PatientAccessWrapperRelease.debug demo.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
@@ -1042,7 +1050,7 @@
 		};
 		EAFA73D21F66ACEA00AAD0D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF07FF62D8068B0C578C6EB5 /* Pods-App-PatientAccessWrapperDevelop.release.xcconfig */;
+			baseConfigurationReference = 82E423EB3B84FFD476B6908D /* Pods-App-PatientAccessWrapperRelease.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -1060,7 +1068,7 @@
 		};
 		EAFA73D31F66ACEA00AAD0D4 /* Release Dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 85C973B9BE0C02F0402E3218 /* Pods-App-PatientAccessWrapperDevelop.release dev.xcconfig */;
+			baseConfigurationReference = EEA04A68853AF9E7F48E173B /* Pods-App-PatientAccessWrapperRelease.release dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -1078,7 +1086,7 @@
 		};
 		EAFA73D41F66ACEA00AAD0D4 /* Release Test */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 616845696F1685F77A5A1980 /* Pods-App-PatientAccessWrapperDevelop.release test.xcconfig */;
+			baseConfigurationReference = 947EB5F17B556AB7CD28EBEE /* Pods-App-PatientAccessWrapperRelease.release test.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -1096,7 +1104,7 @@
 		};
 		EAFA73D51F66ACEA00AAD0D4 /* Release Demo */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D80FDFA044D2A14DA7059E3 /* Pods-App-PatientAccessWrapperDevelop.release demo.xcconfig */;
+			baseConfigurationReference = 7871ED3A97160ED3D2E34F9E /* Pods-App-PatientAccessWrapperRelease.release demo.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
