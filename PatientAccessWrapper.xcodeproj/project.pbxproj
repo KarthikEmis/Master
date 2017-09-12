@@ -15,6 +15,7 @@
 		D310C19C1F26224D00DD3F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D310C19B1F26224D00DD3F05 /* Assets.xcassets */; };
 		D310C19F1F26224D00DD3F05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */; };
 		D310C1A91F28A47300DD3F05 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = D310C1A81F28A47300DD3F05 /* script.js */; };
+		D3444A691F67FDBD00806E9A /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3444A681F67FDBD00806E9A /* URLExtension.swift */; };
 		D9E5AF07810D546C6A061ECE /* Pods_App_PatientAccessWrapperRelease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A56349A1FBC285B69C3FE /* Pods_App_PatientAccessWrapperRelease.framework */; };
 		EAFA73BD1F66ACEA00AAD0D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1961F26224D00DD3F05 /* ViewController.swift */; };
 		EAFA73C01F66ACEA00AAD0D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1941F26224D00DD3F05 /* AppDelegate.swift */; };
@@ -58,6 +59,7 @@
 		D310C19E1F26224D00DD3F05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D310C1A01F26224D00DD3F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D310C1A81F28A47300DD3F05 /* script.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		D3444A681F67FDBD00806E9A /* URLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		DA5BE3096B99C35872384C08 /* Pods-App-PatientAccessWrapperDevelop.debug demo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperDevelop.debug demo.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop.debug demo.xcconfig"; sourceTree = "<group>"; };
 		EAFA73D61F66ACEA00AAD0D4 /* PatientAccessWrapperRelease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientAccessWrapperRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFA73D71F66ACEB00AAD0D4 /* PatientAccessWrapperRelease.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = PatientAccessWrapperRelease.plist; path = /Users/antontikhonov/Documents/GIT/PatientAccessWebWrapper/PatientAccessWrapperRelease.plist; sourceTree = "<absolute>"; };
@@ -163,6 +165,7 @@
 				EAFA73ED1F66B75C00AAD0D4 /* PatientAccessWrapper-Bridging-Header.h */,
 				D310C1A01F26224D00DD3F05 /* Info.plist */,
 				D30C3E6E1F385DE200A7F4FD /* Constants.swift */,
+				D3444A681F67FDBD00806E9A /* URLExtension.swift */,
 			);
 			path = PatientAccessWrapper;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				EAFA73E91F66B29200AAD0D4 /* MXLCalendarManager.m in Sources */,
 				D310C1951F26224D00DD3F05 /* AppDelegate.swift in Sources */,
 				D30C3E6F1F385DE200A7F4FD /* Constants.swift in Sources */,
+				D3444A691F67FDBD00806E9A /* URLExtension.swift in Sources */,
 				EAFA73E31F66B29200AAD0D4 /* MXLCalendar.m in Sources */,
 				EAFA73E51F66B29200AAD0D4 /* MXLCalendarAttendee.m in Sources */,
 				EAFA73EB1F66B29200AAD0D4 /* NSTimeZone+ProperAbbreviation.m in Sources */,

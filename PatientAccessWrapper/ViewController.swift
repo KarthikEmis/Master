@@ -9,8 +9,9 @@
 import UIKit
 import WebKit
 import EventKit
+import MessageUI
 
-class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, URLSessionDelegate {
+class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, URLSessionDelegate, MFMailComposeViewControllerDelegate {
   
   @IBOutlet weak var webContainerView: UIView!
   
@@ -133,7 +134,38 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
       self.openSafariWithURL(requestURL!)
     }
     
+    if requestURL?.absoluteString.lowercased().range(of:"mailto:?subject=") != nil {
+      let body = requestURL?.params?["body"] ?? ""
+      let cc = requestURL?.params?["cc"] ?? "" as String
+      let bcc = requestURL?.params?["bcc"] ?? "" as String
+      let subject = requestURL?.params?["subject"] ?? ""
+      
+      let ccArray = cc.components(separatedBy: ",")
+      let bccArray = bcc.components(separatedBy: ",")
+      sendEmail(messageBody: body, subject: subject, cc: ccArray, bcc: bccArray)
+    }
+    
     decisionHandler(.allow)
+  }
+  
+  private func sendEmail(messageBody: String, subject: String, cc:[String], bcc: [String]) {
+    if MFMailComposeViewController.canSendMail() {
+      let mail = MFMailComposeViewController()
+      mail.mailComposeDelegate = self
+      mail.setMessageBody(messageBody, isHTML: true)
+      mail.setSubject(subject)
+      mail.setCcRecipients(cc)
+      mail.setBccRecipients(bcc)
+      present(mail, animated: true)
+    } else {
+      let alert = UIAlertController(title: "Email", message: "Can't send an email", preferredStyle: UIAlertControllerStyle.alert)
+      alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+      self.present(alert, animated: true, completion: nil)
+    }
+  }
+  
+  func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+    controller.dismiss(animated: true)
   }
   
   func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
