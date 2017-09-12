@@ -10,6 +10,7 @@ import UIKit
 import WebKit
 import EventKit
 import MessageUI
+import SafariServices
 
 class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, URLSessionDelegate, MFMailComposeViewControllerDelegate {
   
@@ -131,7 +132,8 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     
     let requestURL = navigationAction.request.url
     if requestURL?.absoluteString.lowercased().range(of:"https://patient.info/search.asp?searchterm") != nil {
-      self.openSafariWithURL(requestURL!)
+      let svc = SFSafariViewController(url: requestURL!)
+      self.present(svc, animated: true, completion: nil)
     }
     
     if requestURL?.absoluteString.lowercased().range(of:"mailto:?subject=") != nil {
@@ -139,12 +141,12 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
       let cc = requestURL?.params?["cc"] ?? "" as String
       let bcc = requestURL?.params?["bcc"] ?? "" as String
       let subject = requestURL?.params?["subject"] ?? ""
-      
+
       let ccArray = cc.components(separatedBy: ",")
       let bccArray = bcc.components(separatedBy: ",")
       sendEmail(messageBody: body, subject: subject, cc: ccArray, bcc: bccArray)
     }
-    
+
     decisionHandler(.allow)
   }
   
@@ -163,11 +165,11 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
       self.present(alert, animated: true, completion: nil)
     }
   }
-  
+
   func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
     controller.dismiss(animated: true)
   }
-  
+
   func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
     
     decisionHandler(.allow)
