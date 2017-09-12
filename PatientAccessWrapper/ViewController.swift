@@ -9,6 +9,7 @@
 import UIKit
 import WebKit
 import EventKit
+import SafariServices
 
 class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHandler, URLSessionDelegate {
   
@@ -130,7 +131,8 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     
     let requestURL = navigationAction.request.url
     if requestURL?.absoluteString.lowercased().range(of:"https://patient.info/search.asp?searchterm") != nil {
-      self.openSafariWithURL(requestURL!)
+      let svc = SFSafariViewController(url: requestURL!)
+      self.present(svc, animated: true, completion: nil)
     }
     
     decisionHandler(.allow)
