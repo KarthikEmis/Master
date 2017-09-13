@@ -555,7 +555,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE = "0ae18a89-f799-486e-aa69-644b18849001";
 				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -642,7 +642,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE = "0ae18a89-f799-486e-aa69-644b18849001";
 				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -711,7 +711,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE = "0ae18a89-f799-486e-aa69-644b18849001";
 				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -906,7 +906,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE = "0ae18a89-f799-486e-aa69-644b18849001";
 				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
