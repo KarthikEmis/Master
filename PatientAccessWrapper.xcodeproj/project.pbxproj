@@ -555,7 +555,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6bfa22b1-c7b8-4626-8af9-7afa3d12aa62";
+				PROVISIONING_PROFILE = "fe63cc8b-a1bb-4357-9a33-a76df8aa703d";
 				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
