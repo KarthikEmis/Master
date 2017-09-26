@@ -63,7 +63,7 @@ class APIClient {
     }
     
     let source = TaskCompletionSource<T.ResponseObject>()
-/*   
+   
     var apiRequest: DataRequest
     if request.method == .get {
       apiRequest = manager.request(
@@ -83,14 +83,14 @@ class APIClient {
         headers: headers
       )
     }
-*/    
-    let apiRequest = manager.request(
-      url,
-      method: request.method,
-      parameters: nil,
-      encoding: request.encoding,
-      headers: headers
-    )
+ 
+//    let apiRequest = manager.request(
+//      url,
+//      method: request.method,
+//      parameters: nil,
+//      encoding: request.encoding,
+//      headers: headers
+//    )
 
     
     apiRequest.validate(statusCode: 200..<300).response(responseSerializer: request.responseSerializer) { response in

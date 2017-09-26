@@ -7,6 +7,11 @@
 		<key>PatientAccessWrapper.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>PatientAccessWrapper.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 	</dict>
@@ -15,12 +20,12 @@
 		<key>D310C1901F26224D00DD3F05</key>
 		<dict>
 			<key>primary</key>
-			<true />
+			<true/>
 		</dict>
 		<key>EA7FFF891F38503B006A23E9</key>
 		<dict>
 			<key>primary</key>
-			<true />
+			<true/>
 		</dict>
 	</dict>
 </dict>

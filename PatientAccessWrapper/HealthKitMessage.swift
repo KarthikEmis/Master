@@ -38,18 +38,43 @@ class HealthKitMessage {
     var jsonData: Data?
     do {
     jsonData = try JSONSerialization.data(withJSONObject: self.dictionaryRepresentation(),
-                                          options: [])
+                                          options: .init(rawValue: 0))
     }
     catch {
       print(error)
     }
-
     
+//    do {
+//      let decoded = try JSONSerialization.jsonObject(with: jsonData!, options: .allowFragments)
+//      print(decoded)
+//
+//    }
+//    catch {
+//      print(error)
+//    }
+    
+
+
     if (jsonData?.count)! > 0 {
-      return String(data: jsonData!, encoding: .ascii)!
+      return String(data: jsonData!, encoding: .utf8)!
     }
 
     return nil
+  }
+  
+  func convertSpecialCharacters(string: String) -> String {
+    var newString = string
+    let char_dictionary = [
+      "&amp;" : "&",
+      "&lt;" : "<",
+      "&gt;" : ">",
+      "&quot;" : "\"",
+      "&apos;" : "'"
+    ];
+    for (escaped_char, unescaped_char) in char_dictionary {
+      newString = newString.replacingOccurrences(of: escaped_char, with: unescaped_char, options: NSString.CompareOptions.literal, range: nil)
+    }
+    return newString
   }
 
 }

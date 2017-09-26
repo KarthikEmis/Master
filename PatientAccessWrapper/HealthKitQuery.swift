@@ -56,6 +56,10 @@ class HealthKitQuery {
                                   anchor: anchorPoint.intValue,
                                   limit: HKObjectQueryNoLimit,
                                   completionHandler: { (query, results, newAnchor, error) in
+                                    
+                                    if results == nil {
+                                      return
+                                    }
           
                                     var array = [HealthKitSample]()
                                     for result:HKSample in results! {

@@ -14,7 +14,8 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
   
   private var networkService: HealthKitNetworkServiceInterface?
   let healthManager = HealthKitManager.sharedInstance
-  
+  var docController: UIDocumentInteractionController?
+
   @IBOutlet weak var webContainerView: UIView!
   
   override func viewDidLoad() {
@@ -47,6 +48,7 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     wkWebView.navigationDelegate = self
     wkWebView.uiDelegate = self as? WKUIDelegate
     wkWebView.scrollView.isScrollEnabled = true
+    wkWebView.customUserAgent = "iOS/WebWrapper"
     webContainerView.addSubview(wkWebView)
     
     wkWebView.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
@@ -79,68 +81,57 @@ class ViewController: UIViewController, WKNavigationDelegate, WKScriptMessageHan
     print(message.body)
     
     let uuid = UIDevice.current.identifierForVendor?.uuidString
-//    let dictionary = message.body as! Dictionary<String, Any>
-//    
-//    var request = URLRequest(url: URL(string: "https://demo266.dataart.com/api/api/HealthKit/anchors/" + uuid)!)
-//    request.httpMethod = "GET"
-//    
-//    let token = "Bearer " + (dictionary["body"] as! String)
-//    request.setValue(token, forHTTPHeaderField: "Authorization")
-//    let session = URLSession.shared
-//    
-//    session.dataTask(with: request) {data, response, err in
-//      print("Entered the completionHandler")
-//      }.resume()
-//    
     
     let userSession = ApplicationAssembly.shared.userSession
     
     userSession?.receivedToken(tokenString: (message.body as! Dictionary)["body"]!)
     networkService = HealthKitNetworkService()
-    networkService?.getAnchors(uuidString:uuid!) { [weak self] result in
-      guard let strongSelf = self else { return }
-      
-      switch result {
-      case .success(let response):
-
-        let queryCollection = HealthKitQueryCollection.queryCollectionForSampleTypes((response as! HealthKitAnchor).sampleTypes)
-        queryCollection.performQueriesWith(completionHandler: { (results) in
-          
-          let message = HealthKitMessage(withSampleCollections: results)
-          strongSelf.networkService?.postHealthKitData(message: message, completion: {result in
-            switch result {
-            case .success(let response):
-              print("HealthKit data uploaded successfully")
-              break
-            case .failure(let error):
-              print(error)
-              break
-            }
-          })
-        })
-
-        break
+    
+    self.healthManager.authorizeHealthKit { (authorized,  error) -> Void in
+      if authorized {
+        print("HealthKit authorization received.")
         
-      case .failure(let error):
-        print(error)
-        break
-      }
-      
-      strongSelf.healthManager.authorizeHealthKit { (authorized,  error) -> Void in
-        if authorized {
-          print("HealthKit authorization received.")
-        }
-        else
-        {
-          print("HealthKit authorization denied!")
-          if error != nil {
-            print("\(String(describing: error))")
+        self.networkService?.getAnchors(uuidString:uuid!) { [weak self] result in
+          guard let strongSelf = self else { return }
+          
+          switch result {
+          case .success(let response):
+            
+            let queryCollection = HealthKitQueryCollection.queryCollectionForSampleTypes((response as! HealthKitAnchor).sampleTypes)
+            queryCollection.performQueriesWith(completionHandler: { (results) in
+              
+              let message = HealthKitMessage(withSampleCollections: results)
+              let string = message.jsonRepresentation()
+              strongSelf.networkService?.postHealthKitData(message: message, completion: {result in
+                switch result {
+                case .success(let response):
+                  print("HealthKit data uploaded successfully")
+                  break
+                case .failure(let error):
+                  print(error)
+                  break
+                }
+              })
+            })
+            
+            break
+            
+          case .failure(let error):
+            print(error)
+            break
           }
         }
+
       }
-      
-      
+      else
+      {
+        print("HealthKit authorization denied!")
+        if error != nil {
+          print("\(String(describing: error))")
+        }
+      }
     }
+    
     
   }
   

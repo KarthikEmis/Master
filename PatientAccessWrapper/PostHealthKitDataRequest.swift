@@ -25,7 +25,7 @@ class PostHealthKitDataRequest: RequestType {
   }
   
   var encoding: ParameterEncoding {
-    return JSONEncoding.default
+    return JSONEncoding.prettyPrinted
   }
   
   var responseSerializer: DataResponseSerializer<Bool> {
