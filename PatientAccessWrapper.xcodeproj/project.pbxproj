@@ -16,6 +16,7 @@
 		D310C19F1F26224D00DD3F05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D310C19D1F26224D00DD3F05 /* LaunchScreen.storyboard */; };
 		D310C1A91F28A47300DD3F05 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = D310C1A81F28A47300DD3F05 /* script.js */; };
 		D3444A691F67FDBD00806E9A /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3444A681F67FDBD00806E9A /* URLExtension.swift */; };
+		D383461E1F878E7200453954 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3444A681F67FDBD00806E9A /* URLExtension.swift */; };
 		D9E5AF07810D546C6A061ECE /* Pods_App_PatientAccessWrapperRelease.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F28A56349A1FBC285B69C3FE /* Pods_App_PatientAccessWrapperRelease.framework */; };
 		EAFA73BD1F66ACEA00AAD0D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1961F26224D00DD3F05 /* ViewController.swift */; };
 		EAFA73C01F66ACEA00AAD0D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D310C1941F26224D00DD3F05 /* AppDelegate.swift */; };
@@ -417,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D383461E1F878E7200453954 /* URLExtension.swift in Sources */,
 				EAFA73E81F66B29200AAD0D4 /* MXLCalendarEvent.m in Sources */,
 				EAFA73BD1F66ACEA00AAD0D4 /* ViewController.swift in Sources */,
 				EAFA73EA1F66B29200AAD0D4 /* MXLCalendarManager.m in Sources */,
