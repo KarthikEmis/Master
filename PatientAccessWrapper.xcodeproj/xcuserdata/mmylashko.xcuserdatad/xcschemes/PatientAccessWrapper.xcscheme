@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D310C1901F26224D00DD3F05"
-               BuildableName = "PatientAccessWrapper.app"
-               BlueprintName = "PatientAccessWrapper"
+               BuildableName = "PatientAccessWrapperDevelop.app"
+               BlueprintName = "PatientAccessWrapperDevelop"
                ReferencedContainer = "container:PatientAccessWrapper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D310C1901F26224D00DD3F05"
-            BuildableName = "PatientAccessWrapper.app"
-            BlueprintName = "PatientAccessWrapper"
+            BuildableName = "PatientAccessWrapperDevelop.app"
+            BlueprintName = "PatientAccessWrapperDevelop"
             ReferencedContainer = "container:PatientAccessWrapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D310C1901F26224D00DD3F05"
-            BuildableName = "PatientAccessWrapper.app"
-            BlueprintName = "PatientAccessWrapper"
+            BuildableName = "PatientAccessWrapperDevelop.app"
+            BlueprintName = "PatientAccessWrapperDevelop"
             ReferencedContainer = "container:PatientAccessWrapper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D310C1901F26224D00DD3F05"
-            BuildableName = "PatientAccessWrapper.app"
-            BlueprintName = "PatientAccessWrapper"
+            BuildableName = "PatientAccessWrapperDevelop.app"
+            BlueprintName = "PatientAccessWrapperDevelop"
             ReferencedContainer = "container:PatientAccessWrapper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
