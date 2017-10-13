@@ -37,15 +37,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04097257408158AEA79B3D31 /* Pods-App-PatientAccessWrapperDevelop.debug pre-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperDevelop.debug pre-prod.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop.debug pre-prod.xcconfig"; sourceTree = "<group>"; };
 		34D0A5A202BDD907C0F96F61 /* Pods-App-PatientAccessWrapperRelease.debug demo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.debug demo.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.debug demo.xcconfig"; sourceTree = "<group>"; };
 		59D2D19A2AAE36334259E20F /* Pods_App_PatientAccessWrapperDevelop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_PatientAccessWrapperDevelop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60099CC283A7180039B22D58 /* Pods-App-PatientAccessWrapperRelease.debug test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.debug test.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.debug test.xcconfig"; sourceTree = "<group>"; };
 		616845696F1685F77A5A1980 /* Pods-App-PatientAccessWrapperDevelop.release test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperDevelop.release test.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop.release test.xcconfig"; sourceTree = "<group>"; };
 		6342599ACC337407630B5809 /* Pods-App-PatientAccessWrapperRelease.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.debug.xcconfig"; sourceTree = "<group>"; };
+		64D5EF4C99CAADE8DEE6A8E1 /* Pods-App-PatientAccessWrapperDevelop.release pre-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperDevelop.release pre-prod.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop.release pre-prod.xcconfig"; sourceTree = "<group>"; };
 		7871ED3A97160ED3D2E34F9E /* Pods-App-PatientAccessWrapperRelease.release demo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.release demo.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.release demo.xcconfig"; sourceTree = "<group>"; };
 		7917B35BF9F614D9B9246FB1 /* Pods-App-PatientAccessWrapperRelease.debug dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.debug dev.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.debug dev.xcconfig"; sourceTree = "<group>"; };
+		7FD64DA07A85676712377986 /* Pods-App-PatientAccessWrapperRelease.release pre-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.release pre-prod.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.release pre-prod.xcconfig"; sourceTree = "<group>"; };
 		82E423EB3B84FFD476B6908D /* Pods-App-PatientAccessWrapperRelease.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.release.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.release.xcconfig"; sourceTree = "<group>"; };
 		85C973B9BE0C02F0402E3218 /* Pods-App-PatientAccessWrapperDevelop.release dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperDevelop.release dev.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop.release dev.xcconfig"; sourceTree = "<group>"; };
+		8904B3820C1378F8EF370083 /* Pods-App-PatientAccessWrapperRelease.debug pre-prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.debug pre-prod.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.debug pre-prod.xcconfig"; sourceTree = "<group>"; };
 		8D80FDFA044D2A14DA7059E3 /* Pods-App-PatientAccessWrapperDevelop.release demo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperDevelop.release demo.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop.release demo.xcconfig"; sourceTree = "<group>"; };
 		947EB5F17B556AB7CD28EBEE /* Pods-App-PatientAccessWrapperRelease.release test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperRelease.release test.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperRelease/Pods-App-PatientAccessWrapperRelease.release test.xcconfig"; sourceTree = "<group>"; };
 		A46321444D83324D4F0981E1 /* Pods-App-PatientAccessWrapperDevelop.debug test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-PatientAccessWrapperDevelop.debug test.xcconfig"; path = "Pods/Target Support Files/Pods-App-PatientAccessWrapperDevelop/Pods-App-PatientAccessWrapperDevelop.debug test.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +133,10 @@
 				85C973B9BE0C02F0402E3218 /* Pods-App-PatientAccessWrapperDevelop.release dev.xcconfig */,
 				7917B35BF9F614D9B9246FB1 /* Pods-App-PatientAccessWrapperRelease.debug dev.xcconfig */,
 				EEA04A68853AF9E7F48E173B /* Pods-App-PatientAccessWrapperRelease.release dev.xcconfig */,
+				04097257408158AEA79B3D31 /* Pods-App-PatientAccessWrapperDevelop.debug pre-prod.xcconfig */,
+				64D5EF4C99CAADE8DEE6A8E1 /* Pods-App-PatientAccessWrapperDevelop.release pre-prod.xcconfig */,
+				8904B3820C1378F8EF370083 /* Pods-App-PatientAccessWrapperRelease.debug pre-prod.xcconfig */,
+				7FD64DA07A85676712377986 /* Pods-App-PatientAccessWrapperRelease.release pre-prod.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -456,6 +464,174 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0D6DB2DE1F90FF1300D0893E /* Debug Pre-Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG PREPROD";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Pre-Prod";
+		};
+		0D6DB2DF1F90FF1300D0893E /* Debug Pre-Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04097257408158AEA79B3D31 /* Pods-App-PatientAccessWrapperDevelop.debug pre-prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = UCVJ9Z823D;
+				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fe63cc8b-a1bb-4357-9a33-a76df8aa703d";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Debug Pre-Prod";
+		};
+		0D6DB2E01F90FF1300D0893E /* Debug Pre-Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8904B3820C1378F8EF370083 /* Pods-App-PatientAccessWrapperRelease.debug pre-prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = UCVJ9Z823D;
+				INFOPLIST_FILE = PatientAccessWrapperRelease.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b13ee180-3de0-4a4b-bac5-758fca870b6b";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Distribution";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Debug Pre-Prod";
+		};
+		0D6DB2E11F90FF2800D0893E /* Release Pre-Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PREPROD;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Pre-Prod";
+		};
+		0D6DB2E21F90FF2800D0893E /* Release Pre-Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64D5EF4C99CAADE8DEE6A8E1 /* Pods-App-PatientAccessWrapperDevelop.release pre-prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = UCVJ9Z823D;
+				INFOPLIST_FILE = PatientAccessWrapper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.iOSPatientAccessWrapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "22a815a0-7c9d-4b57-8604-5948fe10542e";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Wrapper Distribution";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Release Pre-Prod";
+		};
+		0D6DB2E31F90FF2800D0893E /* Release Pre-Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD64DA07A85676712377986 /* Pods-App-PatientAccessWrapperRelease.release pre-prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = UCVJ9Z823D;
+				INFOPLIST_FILE = PatientAccessWrapperRelease.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.patient.PatientAccess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b13ee180-3de0-4a4b-bac5-758fca870b6b";
+				PROVISIONING_PROFILE_SPECIFIER = "Patient Access Distribution";
+				SWIFT_OBJC_BRIDGING_HEADER = "PatientAccessWrapper/PatientAccessWrapper-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Release Pre-Prod";
+		};
 		D310C1A11F26224D00DD3F05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1137,10 +1313,12 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D310C1A11F26224D00DD3F05 /* Debug */,
+				0D6DB2DE1F90FF1300D0893E /* Debug Pre-Prod */,
 				EAD3EF761F66A9A200A8FDA3 /* Debug Dev */,
 				EA7FFFA01F386B08006A23E9 /* Debug Test */,
 				EA7FFF9D1F386AF8006A23E9 /* Debug Demo */,
 				D310C1A21F26224D00DD3F05 /* Release */,
+				0D6DB2E11F90FF2800D0893E /* Release Pre-Prod */,
 				EAD3EF791F66A9B500A8FDA3 /* Release Dev */,
 				EA7FFFA61F386B28006A23E9 /* Release Test */,
 				EA7FFFA31F386B1A006A23E9 /* Release Demo */,
@@ -1152,10 +1330,12 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D310C1A41F26224D00DD3F05 /* Debug */,
+				0D6DB2DF1F90FF1300D0893E /* Debug Pre-Prod */,
 				EAD3EF771F66A9A200A8FDA3 /* Debug Dev */,
 				EA7FFFA11F386B08006A23E9 /* Debug Test */,
 				EA7FFF9E1F386AF8006A23E9 /* Debug Demo */,
 				D310C1A51F26224D00DD3F05 /* Release */,
+				0D6DB2E21F90FF2800D0893E /* Release Pre-Prod */,
 				EAD3EF7A1F66A9B500A8FDA3 /* Release Dev */,
 				EA7FFFA71F386B28006A23E9 /* Release Test */,
 				EA7FFFA41F386B1A006A23E9 /* Release Demo */,
@@ -1167,10 +1347,12 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EAFA73CE1F66ACEA00AAD0D4 /* Debug */,
+				0D6DB2E01F90FF1300D0893E /* Debug Pre-Prod */,
 				EAFA73CF1F66ACEA00AAD0D4 /* Debug Dev */,
 				EAFA73D01F66ACEA00AAD0D4 /* Debug Test */,
 				EAFA73D11F66ACEA00AAD0D4 /* Debug Demo */,
 				EAFA73D21F66ACEA00AAD0D4 /* Release */,
+				0D6DB2E31F90FF2800D0893E /* Release Pre-Prod */,
 				EAFA73D31F66ACEA00AAD0D4 /* Release Dev */,
 				EAFA73D41F66ACEA00AAD0D4 /* Release Test */,
 				EAFA73D51F66ACEA00AAD0D4 /* Release Demo */,
