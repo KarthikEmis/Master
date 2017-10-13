@@ -16,6 +16,8 @@ enum APIEndpoints {
   static let baseURL = "alpha-web.patient-access.co.uk/"
 #elseif TEST
   static let baseURL = "beta-web.patient-access.co.uk/"
+#elseif PREPROD
+  static let baseURL = "preprod-web.patient-access.co.uk/"
 #else
   static let baseURL = "demo-web.patient-access.co.uk/"
 #endif
